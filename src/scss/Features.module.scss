@@ -1,0 +1,74 @@
+@import 'vars.scss';
+.features {
+    padding: 150px 0px;
+    &__more {
+        text-align: center;
+    }
+    &__soon {
+        text-align: center;
+    }
+    &__text {
+        margin-top: 25px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        color: $dark-blue;
+    }
+    &__moreList {
+        display: flex;
+        column-gap: 100px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-between;
+        margin: 50px 0 100px;
+        & .features__element {
+            width: 310px;
+        }
+    }
+    &__soonList {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__element {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        color: $dark-blue;
+    }
+}
+
+@media (max-width: 1600px) {
+    .features {
+        padding: 100px 0px;
+        &__text {
+            margin-top: 15px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        &__moreList {
+            column-gap: 50px;
+            row-gap: 30px;
+            margin: 50px 0 60px;
+            & .features__element {
+                width: 305px;
+            }
+        }
+        &__soonList {
+            margin-top: 60px;
+        }
+        &__element {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+}

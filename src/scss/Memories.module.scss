@@ -1,0 +1,24 @@
+.memoriesWrapper {
+    position: relative;
+    height: 600px;
+    background: linear-gradient(94.36deg, #407bff 0.27%, #40d1ff 100.45%);
+}
+
+.memories {
+    position: absolute;
+    width: 2250px;
+    left: -145px;
+    top: 50%;
+    transform: translateY(-50%);
+    & img {
+        max-width: 390px;
+        max-height: 440px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .memories img {
+        max-width: 390px;
+        max-height: 440px;
+    }
+}

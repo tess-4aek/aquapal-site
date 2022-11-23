@@ -1,0 +1,68 @@
+@import 'vars.scss';
+.guideWrapper {
+    background: $gradient-light;
+}
+
+.guide {
+    background-image: url(../img/guide/guide_back.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding: 150px 0 60px;
+    position: relative;
+    &__sky {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+    }
+    &__title {
+        position: relative;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: center;
+        margin-bottom: 25px;
+        z-index: 10;
+    }
+    &__text {
+        max-width: 575px;
+        width: 100%;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__demos {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1600px) {
+    .guide {
+        padding: 40px 0;
+        &__title {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            max-width: 445px;
+            font-size: 22px;
+            line-height: 30px;
+            z-index: 10;
+        }
+        &__demos {
+            margin-top: 40px;
+            justify-content: center;
+            column-gap: 100px;
+            & img{
+                max-width: 230px;
+                max-height: 500px;
+            }
+        }
+    }
+}

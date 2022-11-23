@@ -1,0 +1,120 @@
+@import 'vars.scss';
+.team {
+    padding: 150px 0;
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: center;
+        color: $dark-blue;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__list {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        max-width: 630px;
+    }
+    &__avatar {
+        position: relative;
+        display: inline-block;
+        border: 5px solid #BEA4E9;
+        border-radius: 50%;
+        transition: ease .5s;
+        cursor: help;
+        & img {
+            vertical-align: bottom
+        }
+        &:hover {
+            box-shadow: 0px 0px 10px 0px #BEA4E9;
+            & .team__substrate {
+                opacity: 1;
+            }
+        }
+    }
+    &__substrate {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        border-radius: 50%;
+        opacity: 0;
+        transition: ease .5s;
+        z-index: 5;
+        span {
+            font-weight: 700;
+            color: $dark-blue;
+        }
+    }
+    &__sign {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: -5px;
+        right: -5px;
+        width: 50px;
+        height: 50px;
+        background-color: $blue;
+        border-radius: 5px;
+        z-index: 10;
+    }
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        color: $dark-blue;
+        margin-bottom: 8px;
+    }
+    &__position,
+    .team__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__text {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .team {
+        padding: 10px 0;
+        &__title {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            max-width: 630px;
+        }
+        &__list {
+            margin-top: 50px;
+        }
+        &__item {
+            column-gap: 20px;
+            max-width: 520px;
+        }
+    }   
+}

@@ -1,0 +1,121 @@
+@import 'vars.scss';
+.reviews {
+    height: 1080px;
+    background: #E5F6FF;
+    &__inner {
+        padding-top: 150px;
+        position: relative;
+    }
+    &__title {
+        max-width: 415px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        color: $dark-blue;
+        margin-bottom: 25px
+    }
+    &__card {
+        position: absolute;
+        width: 100%;
+        max-width: 485px;
+        padding: 40px;
+        background: #fff;
+        border: 1px solid rgba(64, 123, 255, 0.2);
+        box-shadow: 0px 5px 14px rgba(189, 224, 243, 0.5);
+        border-radius: 20px;
+        &_1 {
+            top: 390px;
+        }
+        &_2 {
+            top: 150px;
+            right: 160px;
+        }
+        &_3 {
+            top: 680px;
+            left: 160px;
+        }
+        &_4 {
+            top: 500px;
+            right: 0;
+        }
+    }
+    &__cardTitle {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        color: $blue;
+        margin-bottom: 10px;
+    }
+    &__cardText {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+    &__cardReview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__from {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+    &__review {
+        display: flex;
+        column-gap: 5px;
+    }
+    &__point {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #A9C7DD;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .reviews {
+        height: 990px;
+        &__inner {
+            padding-top: 100px;
+        }
+        &__title {
+            max-width: 310px;
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 15px
+        }
+        &__card {
+            max-width: 455px;
+            padding: 24px;
+            &_1 {
+                top: 270px;
+            }
+            &_2 {
+                top: 100px;
+                right: 110px;
+            }
+            &_3 {
+                top: 510px;
+                left: 50px;
+            }
+            &_4 {
+                top: 370px;
+                right: 0;
+            }
+        }
+        &__cardTitle {
+            line-height: 28px;
+        }
+        &__cardText {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__from {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}

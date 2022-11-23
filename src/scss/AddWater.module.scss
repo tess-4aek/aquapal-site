@@ -1,0 +1,64 @@
+@import "vars.scss";
+.addWater {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 900px;
+    }
+    &__content {
+        max-width: 520px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: center;
+        color: $dark-blue;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        margin-top: 24px;
+    }
+    &__images {
+        position: relative;
+    }
+    &__watch {
+        position: absolute;
+        bottom: 55px;
+        left: -175px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .addWater {
+        &__inner {
+            min-height: 700px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 15px;
+        }
+        &__watch {
+            max-width: 152px;
+            max-height: 185px;
+            bottom: 95px;
+            left: -100px;
+        }
+        &__phone {
+            max-width: 230px;
+            max-height: 500px;
+            
+        }
+    }
+}

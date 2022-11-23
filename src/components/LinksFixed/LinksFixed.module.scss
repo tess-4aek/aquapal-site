@@ -1,0 +1,59 @@
+.linksFixedWrapper {
+    position: relative;
+    height: 90px;
+}
+
+.linksFixed {
+    // position: fixed;
+    position: absolute;
+    // bottom: -90px;
+    bottom: 0;
+    // opacity: 0;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #DBDBDB;
+    background: #fff;
+    z-index: 9999;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__links {
+        display: flex;
+        column-gap: 25px;
+    }
+    &.linksFixed_fixed {
+        animation: linksAnimationStart .5s;
+        animation-fill-mode: forwards;
+    }
+    &.linksFixed_animationEnd {
+        animation: linksAnimationEnd .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes linksAnimationStart {
+    0% {
+        bottom: -90px;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+        position: fixed;
+    }
+}
+
+@keyframes linksAnimationEnd {
+    0% {
+        bottom: 0;
+        opacity: 1;
+    }
+    100% {
+        bottom: -90px;
+        opacity: 0;
+    }
+}

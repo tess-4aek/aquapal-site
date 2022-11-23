@@ -1,0 +1,100 @@
+@import "vars.scss";
+.track {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 900px;
+    }
+    &__content {
+        max-width: 520px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: center;
+        color: $dark-blue;
+        margin-bottom: 24px;
+    }
+    &__devicesList {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__device {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 130%;
+        color: #ffffff;
+        padding: 10px 40px;
+        background-color: $blue;
+        box-shadow: 0px 5px 14px rgba(205, 205, 205, 0.2);
+        border-radius: 30px;
+    }
+    &__text {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        margin-top: 24px;
+    }
+    &__images {
+        position: relative;
+        margin-right: 175px;
+    }
+    &__watch1 {
+        position: absolute;
+        top: 70px;
+        left: -170px;
+    }
+    &__watch2 {
+        position: absolute;
+        top: 170px;
+        right: -170px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .track {
+        &__inner {
+            min-height: 700px;
+        }
+        &__content {
+            max-width: 430px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        &__device {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
+            padding: 10px 32px;
+        }
+        &__text {
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 15px;
+        }
+        &__images {
+            position: relative;
+            margin-right: 110px;
+        }
+        &__watch1 {
+            max-width: 152px;
+            max-height: 185px;
+            left: -100px;
+        }
+        &__phone{
+            max-width: 230px;
+            max-height: 500px;
+        }
+        &__watch2 {
+            max-width: 170px;
+            max-height: 325px;
+            right: -125px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@import 'vars.scss';
+.footer {
+    padding-bottom: 170px;
+    background-image: url(../img/footer/footer_back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border-bottom: 1px solid $blue;
+        ul {
+            list-style: none;
+            display: flex;
+            column-gap: 60px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            color: #2F2F2F;
+            transition: ease .5s;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    &__info {
+        height: 125px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #ACACAC;
+    }
+    &__company {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    &__contacts {
+        display: flex;
+        column-gap: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        color: $blue;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .footer {
+        &__navigation {
+            a {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        &__copyright {
+            line-height: 20px;
+        }
+        &__company {
+            line-height: 20px;
+        }
+        &__contacts {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}

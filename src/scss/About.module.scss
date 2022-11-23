@@ -1,0 +1,48 @@
+.about {
+    padding: 150px 0 60px;
+    &__text {
+        max-width: 850px;
+        width: 100%;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__demos {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+._animItems {
+    transform: translateY(50%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    &._active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1600px) {
+    .about {
+        padding: 100px 0;
+        &__text {
+            max-width: 700px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__demos {
+            margin-top: 60px;
+            justify-content: center;
+            column-gap: 95px;
+            & img{
+                max-width: 230px;
+                max-height: 500px;
+            }
+        }
+    }
+}
