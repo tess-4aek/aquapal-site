@@ -1,6 +1,9 @@
 @import 'vars.scss';
 .features {
     padding: 150px 0px;
+    &__inner{
+        min-height: 775px;
+    }
     &__more {
         text-align: center;
     }
@@ -48,6 +51,9 @@
 @media (max-width: 1600px) {
     .features {
         padding: 100px 0px;
+        &__inner{
+            min-height: 685px;
+        }
         &__text {
             margin-top: 15px;
         }

@@ -1,10 +1,10 @@
 @import 'vars.scss';
 .reviews {
-    height: 1080px;
+    min-height: 1080px;
     background: #E5F6FF;
     &__inner {
-        padding-top: 150px;
         position: relative;
+        padding-top: 150px;
     }
     &__title {
         max-width: 415px;
@@ -77,7 +77,7 @@
 
 @media (max-width: 1600px) {
     .reviews {
-        height: 990px;
+        min-height: 990px;
         &__inner {
             padding-top: 100px;
         }

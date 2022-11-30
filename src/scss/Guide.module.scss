@@ -10,6 +10,9 @@
     background-repeat: no-repeat;
     padding: 150px 0 60px;
     position: relative;
+    &__inner{
+        min-height: 990px;
+    }
     &__sky {
         position: absolute;
         z-index: 5;
@@ -44,12 +47,16 @@
 @media (max-width: 1600px) {
     .guide {
         padding: 40px 0;
+        &__inner{
+            min-height: 732px;
+        }
         &__title {
             font-size: 36px;
             line-height: 50px;
             margin-bottom: 15px;
         }
         &__text {
+            position: relative;
             max-width: 445px;
             font-size: 22px;
             line-height: 30px;

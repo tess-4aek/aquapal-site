@@ -1,12 +1,27 @@
 import style from '../scss/Guide.module.scss'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+import { setGuidePosAction } from '../store/sitePosReducer'
+
 import sky from '../img/sky-dynamic_footage.png'
 import phone1 from '../img/guide/guide_phone-1.png'
 import phone2 from '../img/guide/guide_phone-2.png'
 import phone3 from '../img/guide/guide_phone-3.png'
 
 const Guide = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const guideOffsetTop = ref.current
+        dispatch(setGuidePosAction(guideOffsetTop.offsetTop))
+    }, [])
+
+
     return (
-        <div className={style.guideWrapper}>
+        <div className={style.guideWrapper} ref={ref}>
             <div className={style.guide}>
                 <div className="container">
                     <div className={style.guide__inner}>

@@ -1,4 +1,8 @@
 import style from '../scss/Team.module.scss'
+import { useDispatch } from 'react-redux'
+import { setTeamPosAction } from '../store/sitePosReducer'
+import { useEffect, useRef } from 'react'
+
 import NikitaAxyonov from '../img/team/NikitaAxyonov.png'
 import HannaTyrinova from '../img/team/HannaTyrinova.png'
 import AlinaShevtsova from '../img/team/AlinaShevtsova.png'
@@ -12,8 +16,19 @@ import Libra from '../img/team/astr-sign_libra.svg'
 import Vigro from '../img/team/astr-sign_vigro.svg'
 
 const Team = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const teamOffsetTop = ref.current
+        dispatch(setTeamPosAction(teamOffsetTop.offsetTop))
+    }, [])
+
+
     return (
-        <div id='team' className={style.team}>
+        <div id='team' className={style.team} ref={ref}>
             <div className="container">
                 <div className={style.team__inner}>
                     <div className={style.team__title}>
@@ -29,9 +44,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Cancer} alt="Cancer" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(252, 219, 255, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(252, 219, 255, 0.5)" }}>
                                     <div> Plant: <br /> <span>Cactus</span></div>
-                                   <div>  Daily Water: <br /> <span>3650ml</span></div>
+                                    <div>  Daily Water: <br /> <span>3650ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>
@@ -52,9 +67,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Vigro} alt="Vigro" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(210, 250, 255, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(210, 250, 255, 0.5)" }}>
                                     <div> Plant: <br /> <span>Thuja</span></div>
-                                   <div>  Daily Water: <br /> <span>3000ml</span></div>
+                                    <div>  Daily Water: <br /> <span>3000ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>
@@ -75,9 +90,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Gemini} alt="Gemini" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(232, 255, 210, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(232, 255, 210, 0.5)" }}>
                                     <div> Plant: <br /> <span>Water lily</span></div>
-                                   <div>  Daily Water: <br /> <span>1850ml</span></div>
+                                    <div>  Daily Water: <br /> <span>1850ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>
@@ -98,9 +113,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Gemini} alt="Gemini" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(255, 204, 204, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(255, 204, 204, 0.5)" }}>
                                     <div> Plant: <br /> <span>Cotton</span></div>
-                                   <div>  Daily Water: <br /> <span>1900ml</span></div>
+                                    <div>  Daily Water: <br /> <span>1900ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>
@@ -121,9 +136,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Libra} alt="Libra" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(208, 255, 249, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(208, 255, 249, 0.5)" }}>
                                     <div> Plant: <br /> <span>Rose</span></div>
-                                   <div>  Daily Water: <br /> <span>3080ml</span></div>
+                                    <div>  Daily Water: <br /> <span>3080ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>
@@ -144,9 +159,9 @@ const Team = () => {
                                 <div className={style.team__sign}>
                                     <img src={Aries} alt="Aries" />
                                 </div>
-                                 <div className={style.team__substrate} style={{background: "rgba(255, 241, 204, 0.5)"}}>
+                                <div className={style.team__substrate} style={{ background: "rgba(255, 241, 204, 0.5)" }}>
                                     <div> Plant: <br /> <span>Corn</span></div>
-                                   <div>  Daily Water: <br /> <span>3500ml</span></div>
+                                    <div>  Daily Water: <br /> <span>3500ml</span></div>
                                 </div>
                             </div>
                             <div className={style.team__content}>

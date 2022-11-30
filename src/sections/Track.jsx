@@ -1,11 +1,27 @@
 import style from '../scss/Track.module.scss'
+import { useDispatch } from 'react-redux'
+import { setTrackPosAction } from '../store/sitePosReducer'
+import { useEffect, useRef } from 'react'
+
 import appleWatch1 from '../img/track/track_apple-watch-1.png'
 import appleWatch2 from '../img/track/track_apple-watch-2.png'
 import phone from '../img/track/track_phone.png'
 
 const Track = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const trackOffsetTop = ref.current
+        dispatch(setTrackPosAction(trackOffsetTop.offsetTop))
+    }, [])
+
+    const track = useRef()
+
     return (
-        <div className={style.track}>
+        <div className={style.track} ref={ref}>
             <div className="container">
                 <div className={style.track__inner}>
                     <div className={style.track__content}>

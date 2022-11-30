@@ -1,12 +1,26 @@
 import style from '../scss/Knows.module.scss'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+import { setKnowsPosAction } from '../store/sitePosReducer'
+
 import sky from '../img/sky-dynamic_footage.png'
 import phone1 from '../img/knows/knows_phone-1.png'
 import phone2 from '../img/knows/knows_phone-2.png'
 
 const Knows = () => {
+
+    const dispatch = useDispatch()
+    
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const knowsOffsetTop = ref.current
+        dispatch(setKnowsPosAction(knowsOffsetTop.offsetTop))
+    }, [])
+
     return (
         <div className={style.knowsWrapper}>
-            <div className={style.knows}>
+            <div className={style.knows} ref={ref}>
                 <div className="container">
                     <div className={style.knows__inner}>
                         <img src={sky} alt="I believe I can fly" className={style.knows__sky} />

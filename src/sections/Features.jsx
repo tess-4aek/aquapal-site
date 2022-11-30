@@ -1,4 +1,8 @@
 import style from '../scss/Features.module.scss'
+import { useDispatch } from 'react-redux'
+import { setFeaturesPosAction } from '../store/sitePosReducer'
+import { useEffect, useRef } from 'react'
+
 import modes from '../img/features/ld-modes_icon.svg'
 import achievements from '../img/features/achivments_icon.svg'
 import sounds from '../img/features/sounds_icon.svg'
@@ -13,8 +17,19 @@ import languages from '../img/features/languages_icon.svg'
 import plants from '../img/features/plants_icon.svg'
 
 const Features = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const featuresOffsetTop = ref.current
+        dispatch(setFeaturesPosAction(featuresOffsetTop.offsetTop))
+    }, [])
+
+
     return (
-        <div id='features' className={style.features}>
+        <div id='features' className={style.features} ref={ref}>
             <div className="container">
                 <div className={style.features__inner}>
                     <div className={style.features__more}>

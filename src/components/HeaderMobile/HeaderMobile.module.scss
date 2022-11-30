@@ -1,0 +1,100 @@
+@import "../../scss/vars.scss";
+.headerMobile {
+    display: none;
+    align-items: center;
+    height: 80px;
+    background-color: #f8fbff;
+    z-index: 15;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__navigation {
+        position: absolute;
+        // max-width: 290px;
+        width: 100%;
+        top: 80px;
+        right: 0;
+        background: #f8fbff;
+        padding: 15px 15px 0 15px;
+        transform: translateX(100%);
+        z-index: 10;
+        transition: .5s;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-bottom: 50px;
+            border-bottom: 1px solid $blue;
+            li > a {
+                text-decoration: none;
+                color: $black;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                letter-spacing: -0.4px;
+                padding: 15px 0;
+                transition: 0.5s;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            li + li{
+                border-top: 1px solid rgba(73, 167, 255, 0.1);
+            }
+        }
+        &._active{
+            transform: translateX(0);
+        }
+    }
+    &__burgerMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        &_element1 {
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background: #296291;
+            top: 14px;
+            right: 3px;
+            border-radius: 1px;
+            transition: .5s;
+        }
+        &_element2 {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: #296291;
+            top: 23px;
+            right: 3px;
+            border-radius: 1px;
+            transition: .5s;
+        }
+        &._active{
+            .headerMobile__burgerMenu_element1 {
+                transform: translateX(50%) rotateZ(45deg);
+                top: 50%;
+                right: 50%;
+                height: 1.5px;
+            }
+            .headerMobile__burgerMenu_element2 {
+                width: 30px;
+                transform: translateX(50%) rotateZ(-45deg);
+                top: 50%;
+                right: 50%;
+                height: 1.5px;
+            }
+        }
+    }
+    &__contactsWrapper{
+        padding: 60px 0;
+    }
+}
+
+@media(max-width: 720px) {
+    .headerMobile{
+        display: flex;
+    }
+}

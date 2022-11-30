@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
+    &__inner{
+        min-height: 225px;
+    }
     &__navigation {
         display: flex;
         justify-content: center;
@@ -47,23 +50,8 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
-    }
-    &__contacts {
-        display: flex;
-        column-gap: 10px;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 27px;
-        color: $blue;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: $blue;
-        }
+        text-decoration: none;
+        color: $black;
     }
 }
 
@@ -80,10 +68,6 @@
         }
         &__company {
             line-height: 20px;
-        }
-        &__contacts {
-            font-size: 18px;
-            line-height: 25px;
         }
     }
 }

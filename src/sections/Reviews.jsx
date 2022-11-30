@@ -1,9 +1,24 @@
 import style from '../scss/Reviews.module.scss'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+import { setReviewsPosAction } from '../store/sitePosReducer'
+
 import star from '../img/reviews/star_icon.svg'
 
 const Reviews = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const reviewsOffsetTop = ref.current
+        dispatch(setReviewsPosAction(reviewsOffsetTop.offsetTop))
+    }, [])
+
+
     return (
-        <div id='reviews' className={style.reviews}>
+        <div id='reviews' className={style.reviews} ref={ref}>
             <div className="container">
                 <div className={style.reviews__inner}>
                     <div className={style.reviews__title}>

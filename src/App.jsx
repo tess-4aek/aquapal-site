@@ -13,25 +13,29 @@ import Team from './sections/Team'
 import Wave from './sections/Wave'
 import Reviews from './sections/Reviews'
 import Footer from './sections/Footer'
+import ScrollUp from './components/ScrollUp/ScrollUp'
+
+// react-helmet
 
 function App() {
   return (
-    <div className="App">
-      <MainScreen />
-      <About />
-      <LinksFixed />
-      <Knows />
-      <Track />
-      <Progress />
-      <AddWater />
-      <Guide />
-      <Features />
-      <Memories />
-      <Team />
-      <Reviews />
-      <Wave />
-      <Footer />
-    </div>
+      <div className="App" style={{ position: 'relative' }}>
+        <ScrollUp />
+        <MainScreen />
+        <About />
+        <LinksFixed />
+        <Knows />
+        <Track />
+        <Progress />
+        <AddWater />
+        <Guide />
+        <Features />
+        <Memories />
+        <Team />
+        <Reviews />
+        <Wave />
+        <Footer />
+      </div>
   )
 }
 

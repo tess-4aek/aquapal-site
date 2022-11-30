@@ -1,6 +1,9 @@
 @import 'vars.scss';
 .team {
     padding: 150px 0;
+    &__inner{
+        min-height: 910px;
+    }
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -100,7 +103,10 @@
 
 @media (max-width: 1600px) {
     .team {
-        padding: 10px 0;
+        padding: 100px 0;
+        &__inner{
+            min-height: 855px;
+        }
         &__title {
             font-size: 36px;
             line-height: 50px;

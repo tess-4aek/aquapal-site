@@ -1,11 +1,26 @@
 import style from '../scss/Progress.module.scss'
+import { useDispatch } from 'react-redux'
+import { setProgressPosAction } from '../store/sitePosReducer'
+import { useEffect, useRef } from 'react'
+
 import sky from '../img/sky-dynamic_footage.png'
 import phone1 from '../img/progress/progress_phone-1.png'
 import phone2 from '../img/progress/progress_phone-2.png'
 
 const Progress = () => {
+
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const progressOffsetTop = ref.current
+        dispatch(setProgressPosAction(progressOffsetTop.offsetTop))
+    }, [])
+
+    
     return (
-        <div className={style.progressWrapper}>
+        <div className={style.progressWrapper} ref={ref}>
             <div className={style.progress}>
                 <div className="container">
                     <div className={style.progress__inner}>

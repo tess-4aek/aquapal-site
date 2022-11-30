@@ -1,4 +1,8 @@
 import style from '../scss/About.module.scss'
+import { setAboutPosAction } from '../store/sitePosReducer'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react'
+
 import phone1 from '../img/about-it/about-it_phone-1.png'
 import phone2 from '../img/about-it/about-it_phone-2.png'
 import phone3 from '../img/about-it/about-it_phone-3.png'
@@ -42,9 +46,19 @@ const About = () => {
     //     animOnScroll()
     // }
     
+    const dispatch = useDispatch()
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const aboutOffsetTop = ref.current
+        dispatch(setAboutPosAction(aboutOffsetTop.offsetTop))
+    }, [])
+
+    const about = useRef()
 
     return (
-        <div id='about' className={style.about}>
+        <div id='about' className={style.about} ref={ref}>
             <div className="container">
                 <div className={style.about__inner}>
                     <div className={style.about__text}>

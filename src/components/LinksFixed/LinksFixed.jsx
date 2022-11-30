@@ -2,27 +2,43 @@ import style from './LinksFixed.module.scss'
 import Logo from '../Logo/Logo'
 import appStore from '../../img/app-store_btn.svg'
 import playMarket from '../../img/play-market_btn.svg'
+import { useRef } from 'react'
+import { useSelector } from 'react-redux'
 
 const LinksFixed = () => {
 
-    // window.onscroll = () => {
-    //     const linksWrapper = document.querySelector(`.${style.linksFixedWrapper}`)
-    //     const links = document.querySelector(`.${style.linksFixed}`)
+    const linksWrapper = useRef()
+    const links = useRef()
 
-    //     if (window.scrollY <= (linksWrapper.offsetTop - window.innerHeight)) {
-    //         links.classList.remove(`${style.linksFixed_fixed}`)
-    //     } else if ((window.scrollY - links.clientHeight) > 10150) {
-    //         links.classList.add(`${style.linksFixed_animationEnd}`)
-    //         links.classList.remove(`${style.linksFixed_fixed}`)
-    //     } else {
-    //         links.classList.add(`${style.linksFixed_fixed}`)
-    //         links.classList.remove(`${style.linksFixed_animationEnd}`)
-    //     }
-    // }
+    const pos = useSelector(state => state.pos)
+
+    window.onscroll = function () {
+        // console.log(window.scrollY + window.innerHeight)
+
+        let windowScrollPos = window.scrollY + window.innerHeight
+
+        if (
+            windowScrollPos <= (linksWrapper.current.offsetTop)
+            && links.current.classList.contains(style.linksFixed_fixed)) {
+            links.current.classList.add(`${style.linksFixed_animationEnd}`)
+            links.current.classList.remove(`${style.linksFixed_fixed}`)
+        }
+        else if ((windowScrollPos - links.current.clientHeight) > pos.wave) {
+            links.current.classList.add(`${style.linksFixed_animationEnd}`)
+            links.current.classList.remove(`${style.linksFixed_fixed}`)
+        }
+        else if (
+            windowScrollPos > (linksWrapper.current.offsetTop)
+        ) {
+            links.current.classList.add(`${style.linksFixed_fixed}`)
+            links.current.classList.remove(`${style.linksFixed_animationEnd}`)
+        }
+
+    }
 
     return (
-        <div className={style.linksFixedWrapper}>
-            <div className={style.linksFixed}>
+        <div className={style.linksFixedWrapper} ref={linksWrapper}>
+            <div className={style.linksFixed} ref={links}>
                 <div className="container">
                     <div className={style.linksFixed__inner}>
                         <Logo />

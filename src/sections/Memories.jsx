@@ -1,6 +1,10 @@
 import style from '../scss/Memories.module.scss'
+import { useDispatch } from 'react-redux'
+import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { setMemoriesPosAction } from '../store/sitePosReducer';
 import 'swiper/css';
+
 import photoCard1 from '../img/memories/photoCard1.png'
 import photoCard2 from '../img/memories/photoCard2.png'
 import photoCard3 from '../img/memories/photoCard3.png'
@@ -11,8 +15,19 @@ import photoCard7 from '../img/memories/photoCard7.png'
 import photoCard8 from '../img/memories/photoCard8.png'
 
 const Memories = () => {
+
+    const dispatch = useDispatch()
+    
+    const ref = useRef(null)
+
+    useEffect(() => {
+        const memoriesOffsetTop = ref.current
+        dispatch(setMemoriesPosAction(memoriesOffsetTop.offsetTop))
+    }, [])
+
+
     return (
-        <div className={style.memoriesWrapper}>
+        <div className={style.memoriesWrapper} ref={ref}>
             <div className={style.memories}>
                 <Swiper
                     spaceBetween={30}

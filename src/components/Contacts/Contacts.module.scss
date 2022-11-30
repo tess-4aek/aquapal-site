@@ -1,0 +1,25 @@
+@import "../../scss/vars.scss";
+.contacts {
+    display: flex;
+    column-gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: $blue;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+}
+
+@media (max-width: 1600px) {
+    .contacts {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
