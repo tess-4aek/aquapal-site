@@ -1,7 +1,7 @@
-@import 'vars.scss';
+@import "vars.scss";
 .features {
     padding: 150px 0px;
-    &__inner{
+    &__inner {
         min-height: 775px;
     }
     &__more {
@@ -10,8 +10,9 @@
     &__soon {
         text-align: center;
     }
-    &__text {
-        margin-top: 25px;
+    &__subtitle {
+        margin: 25px auto 0;
+        max-width: 850px;
     }
     &__title {
         font-size: 48px;
@@ -51,10 +52,10 @@
 @media (max-width: 1600px) {
     .features {
         padding: 100px 0px;
-        &__inner{
+        &__inner {
             min-height: 685px;
         }
-        &__text {
+        &__subtitle {
             margin-top: 15px;
         }
         &__title {
@@ -75,6 +76,26 @@
         &__element {
             font-size: 22px;
             line-height: 28px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .features {
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.4px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.4px;
+        }
+        &__element {
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.4px;
         }
     }
 }

@@ -13,6 +13,8 @@ import photoCard5 from '../img/memories/photoCard5.png'
 import photoCard6 from '../img/memories/photoCard6.png'
 import photoCard7 from '../img/memories/photoCard7.png'
 import photoCard8 from '../img/memories/photoCard8.png'
+import photoCard9 from '../img/memories/photoCard9.png'
+import photoCard10 from '../img/memories/photoCard10.png'
 
 const Memories = () => {
 
@@ -30,7 +32,6 @@ const Memories = () => {
         <div className={style.memoriesWrapper} ref={ref}>
             <div className={style.memories}>
                 <Swiper
-                    spaceBetween={30}
                     slidesPerView={5}
                     grabCursor={true}
                     loop={true}
@@ -43,6 +44,8 @@ const Memories = () => {
                     <SwiperSlide><img src={photoCard6} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={photoCard7} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={photoCard8} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={photoCard9} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={photoCard10} alt="" /></SwiperSlide>
                 </Swiper>
             </div>
         </div>

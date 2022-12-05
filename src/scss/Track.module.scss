@@ -87,7 +87,7 @@
             max-height: 185px;
             left: -100px;
         }
-        &__phone{
+        &__phone {
             max-width: 230px;
             max-height: 500px;
         }
@@ -95,6 +95,53 @@
             max-width: 170px;
             max-height: 325px;
             right: -125px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .track {
+        padding: 65px 0;
+        &__inner{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__content {
+            max-width: unset;
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+        }
+        &__devicesList {
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            column-gap: 15px;
+        }
+        &__device {
+            font-size: 18px;
+            line-height: 140%;
+            padding: 10px 30px;
+        }
+        &__text {
+            font-size: 18px;
+            letter-spacing: -0.4px;
+        }
+        &__images {
+            position: unset;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &__watch1 {
+            position: unset;
+        }
+        &__watch2 {
+            position: unset;
         }
     }
 }

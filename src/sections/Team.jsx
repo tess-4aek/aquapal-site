@@ -35,7 +35,7 @@ const Team = () => {
                         Meet the team
                     </div>
                     <div className={style.team__subtitle}>
-                        Application was made by Super Hero Software agency - Nitrix! Let’s introduce a small part of our friendly team.
+                        Application was made by Super Hero Software agency - Nitrix! <br /> Let’s introduce a small part of our friendly team.
                     </div>
                     <div className={style.team__list}>
                         <div className={style.team__item}>

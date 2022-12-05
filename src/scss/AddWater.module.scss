@@ -58,7 +58,36 @@
         &__phone {
             max-width: 230px;
             max-height: 500px;
-            
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .addWater {
+        padding: 65px 0;
+        &__inner {
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__images {
+            position: unset;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            row-gap: 40px;
+        }
+        &__watch {
+            position: unset;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.4px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 140%;
         }
     }
 }

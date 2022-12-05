@@ -6,19 +6,34 @@
 
 .memories {
     position: absolute;
-    width: 2250px;
+    width: 2342px;
     left: -145px;
     top: 50%;
     transform: translateY(-50%);
     & img {
         max-width: 390px;
         max-height: 440px;
+        width: 100%;
+        height: 100%;
     }
 }
 
-@media (max-width: 1600px) {
-    .memories img {
-        max-width: 390px;
-        max-height: 440px;
+// @media (max-width: 1600px) {
+//     .memories img {
+//         max-width: 390px;
+//         max-height: 440px;
+//     }
+// }
+
+@media (max-width: 720px) {
+    .memoriesWrapper{
+        height: 400px;
+    }
+    .memories{
+        left: 40px;
+        & img{
+            max-width: 280px;
+            max-height: 310px; 
+        }
     }
 }

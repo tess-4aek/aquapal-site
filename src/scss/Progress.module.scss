@@ -1,11 +1,11 @@
-@import 'vars.scss';
+@import "vars.scss";
 .progressWrapper {
     background: $gradient-light;
 }
 
 .progress {
     background-image: url(../img/progress/progress_back.png);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     position: relative;
@@ -27,7 +27,6 @@
     &__phone1 {
         position: absolute;
         z-index: 15;
-        top: 0;
         top: 115px;
         left: 240px;
     }
@@ -89,6 +88,46 @@
             font-size: 22px;
             line-height: 30px;
             margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .progress {
+        padding: 65px 0;
+        background-size: cover;
+        background-image: url(../img/progress/progress_back_mobile.png);
+        &__inner {
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+        &__phones {
+            position: unset;
+            height: unset;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &__phone1 {
+            position: unset;
+        }
+        &__phone2 {
+            position: unset;
+        }
+        &__content {
+            max-width: unset;
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.4px;
+            width: unset;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 140%;
         }
     }
 }

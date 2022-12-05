@@ -1,7 +1,7 @@
-@import 'vars.scss';
+@import "vars.scss";
 .team {
     padding: 150px 0;
-    &__inner{
+    &__inner {
         min-height: 910px;
     }
     &__title {
@@ -33,17 +33,20 @@
     &__avatar {
         position: relative;
         display: inline-block;
-        border: 5px solid #BEA4E9;
+        border: 5px solid #bea4e9;
         border-radius: 50%;
-        transition: ease .5s;
+        transition: ease 0.5s;
         cursor: help;
         & img {
-            vertical-align: bottom
+            vertical-align: bottom;
         }
         &:hover {
-            box-shadow: 0px 0px 10px 0px #BEA4E9;
+            box-shadow: 0px 0px 10px 0px #bea4e9;
             & .team__substrate {
                 opacity: 1;
+            }
+            &>img{
+                filter: blur(5px);
             }
         }
     }
@@ -63,7 +66,7 @@
         text-align: center;
         border-radius: 50%;
         opacity: 0;
-        transition: ease .5s;
+        transition: ease 0.5s;
         z-index: 5;
         span {
             font-weight: 700;
@@ -104,7 +107,7 @@
 @media (max-width: 1600px) {
     .team {
         padding: 100px 0;
-        &__inner{
+        &__inner {
             min-height: 855px;
         }
         &__title {
@@ -122,5 +125,29 @@
             column-gap: 20px;
             max-width: 520px;
         }
-    }   
+        &__name{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        &__position, .team__text{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .team {
+        padding: 65px 0;
+        &__item {
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        &__name, .team__position, .team__text {
+            font-size: 16px;
+            line-height: 140%;
+            margin-top: 5px;
+        }
+    }
 }

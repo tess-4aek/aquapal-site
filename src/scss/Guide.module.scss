@@ -1,16 +1,16 @@
-@import 'vars.scss';
+@import "vars.scss";
 .guideWrapper {
     background: $gradient-light;
 }
 
 .guide {
     background-image: url(../img/guide/guide_back.png);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    padding: 150px 0 60px;
+    padding: 80px 0 75px;
     position: relative;
-    &__inner{
+    &__inner {
         min-height: 990px;
     }
     &__sky {
@@ -37,17 +37,18 @@
         margin: 0 auto;
     }
     &__demos {
-        margin-top: 100px;
+        margin-top: 45px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        column-gap: 115px;
     }
 }
 
 @media (max-width: 1600px) {
     .guide {
         padding: 40px 0;
-        &__inner{
+        &__inner {
             min-height: 732px;
         }
         &__title {
@@ -66,10 +67,33 @@
             margin-top: 40px;
             justify-content: center;
             column-gap: 100px;
-            & img{
+            & img {
                 max-width: 230px;
                 max-height: 500px;
             }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .guide {
+        padding: 65px 0;
+        &__demos {
+            position: unset;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.4px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.4px;
         }
     }
 }

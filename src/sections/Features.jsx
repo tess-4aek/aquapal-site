@@ -36,7 +36,7 @@ const Features = () => {
                         <div className={style.features__title}>
                             And more other features
                         </div>
-                        <div className={style.features__text}>
+                        <div className={style.features__subtitle}>
                             Explore Aqua Pal's other great features that will help you meet your daily hydration goal. The ultimate water tracker app!
                         </div>
                         <div className={style.features__moreList}>

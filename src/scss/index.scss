@@ -20,8 +20,8 @@ body {
     line-height: 140%;
     letter-spacing: -0.4px;
     color: $black;
+    background-color: #F8FBFF;
 }
-
 a {
     display: inline-block;
     & > * {
@@ -41,7 +41,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: $blue;
+    background: #CCE7FF;
 }
 
 .container {
