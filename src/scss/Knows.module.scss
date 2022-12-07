@@ -64,13 +64,15 @@
         &__phones {
             height: 580px;
         }
-        &__phone1 {
+        &__phone1 img {
             max-width: 230px;
             max-height: 500px;
         }
         &__phone2 {
-            max-width: 230px;
-            max-height: 500px;
+            & img {
+                max-width: 230px;
+                max-height: 500px;
+            }
             top: 55px;
             left: 200px;
         }

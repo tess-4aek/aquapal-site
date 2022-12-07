@@ -83,17 +83,21 @@
             margin-right: 110px;
         }
         &__watch1 {
-            max-width: 152px;
-            max-height: 185px;
+            & img {
+                max-width: 152px;
+                max-height: 185px;
+            }
             left: -100px;
         }
-        &__phone {
+        &__phone img {
             max-width: 230px;
             max-height: 500px;
         }
         &__watch2 {
-            max-width: 170px;
-            max-height: 325px;
+            & img {
+                max-width: 170px;
+                max-height: 325px;
+            }
             right: -125px;
         }
     }
@@ -102,7 +106,7 @@
 @media (max-width: 720px) {
     .track {
         padding: 65px 0;
-        &__inner{
+        &__inner {
             flex-direction: column;
             justify-content: center;
         }

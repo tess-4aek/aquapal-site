@@ -2,6 +2,7 @@ import style from '../scss/AddWater.module.scss'
 import { useDispatch } from 'react-redux'
 import { useEffect, useRef } from 'react'
 import { setAddWaterPosAction } from '../store/sitePosReducer'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 import appleWatch from '../img/add-water/add-water_apple-watch.png'
 import phone from '../img/add-water/add-water_phone.png'
@@ -23,15 +24,27 @@ const AddWater = () => {
                 <div className={style.addWater__inner}>
                     <div className={style.addWater__content}>
                         <div className={style.addWater__title}>
-                            Flexible water <br /> addition system
+                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '.5s' }}>
+                                Flexible water <br /> addition system
+                            </AnimationOnScroll>
                         </div>
                         <div className={style.addWater__text}>
-                            Add water in different volumes: system-calculated optimal amount, manually or by sips, if you do not know the volume of the glass from which you drink.
+                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
+                                Add water in different volumes: system-calculated optimal amount, manually or by sips, if you do not know the volume of the glass from which you drink.
+                            </AnimationOnScroll>
                         </div>
                     </div>
                     <div className={style.addWater__images}>
-                        <img src={appleWatch} alt="Add water with watches" className={style.addWater__watch} />
-                        <img src={phone} alt="Add water with smartphone" className={style.addWater__phone} />
+                        <div className={style.addWater__watch}>
+                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeft" style={{ animationDuration: '1.5s' }}>
+                                <img src={appleWatch} alt="Add water with watches" />
+                            </AnimationOnScroll>
+                        </div>
+                        <div className={style.addWater__phone}>
+                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
+                                <img src={phone} alt="Add water with smartphone" />
+                            </AnimationOnScroll>
+                        </div>
                     </div>
                 </div>
             </div>

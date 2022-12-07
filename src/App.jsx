@@ -1,4 +1,5 @@
 import './scss/App.scss'
+import 'animate.css/animate.min.css'
 import MainScreen from './sections/MainScreen'
 import About from './sections/About'
 import LinksFixed from './components/LinksFixed/LinksFixed'

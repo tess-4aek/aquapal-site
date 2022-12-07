@@ -31,6 +31,10 @@
         position: absolute;
         bottom: 55px;
         left: -175px;
+        z-index: 15;
+    }
+    &__phone{
+        z-index: 10;
     }
 }
 
@@ -50,12 +54,14 @@
             margin-top: 15px;
         }
         &__watch {
-            max-width: 152px;
-            max-height: 185px;
+            & img {
+                max-width: 152px;
+                max-height: 185px;
+            }
             bottom: 95px;
             left: -100px;
         }
-        &__phone {
+        &__phone img {
             max-width: 230px;
             max-height: 500px;
         }

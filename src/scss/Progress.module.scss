@@ -4,7 +4,7 @@
 }
 
 .progress {
-    background-image: url(../img/progress/progress_back.png);
+    // background-image: url(../img/progress/progress_back.png);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -68,13 +68,17 @@
         &__phone1 {
             top: 80px;
             left: 200px;
-            max-width: 230px;
-            max-height: 500px;
+            & img {
+                max-width: 230px;
+                max-height: 500px;
+            }
         }
         &__phone2 {
             top: 0;
-            max-width: 230px;
-            max-height: 500px;
+            & img {
+                max-width: 230px;
+                max-height: 500px;
+            }
         }
         &__content {
             max-width: 520px;
@@ -96,7 +100,7 @@
     .progress {
         padding: 65px 0;
         background-size: cover;
-        background-image: url(../img/progress/progress_back_mobile.png);
+        // background-image: url(../img/progress/progress_back_mobile.png);
         &__inner {
             justify-content: center;
             flex-direction: column-reverse;

@@ -1,11 +1,10 @@
 import style from '../scss/MainScreen.module.scss'
 import Header from '../components/Header/Header'
+import HeaderMobile from '../components/HeaderMobile/HeaderMobile'
 
 import flag from '../img/ukrainian-flag_icon.png'
 import appStore from '../img/app-store_btn.svg'
 import playMarket from '../img/play-market_btn.svg'
-import HeaderMobile from '../components/HeaderMobile/HeaderMobile'
-import { useEffect, useState } from 'react'
 
 const MainScreen = () => {
     return (
@@ -37,7 +36,6 @@ const MainScreen = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
