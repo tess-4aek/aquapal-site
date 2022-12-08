@@ -59,7 +59,7 @@ const Team = () => {
                                         Founder & CEO
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        A wise director of his company, fully committed to the business and expects the same from his employees.
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ const Team = () => {
                                         PM
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        A good communicator who is skilled in dealing with problems in a resourceful manner and negotiating to achieve beneficial agreement.
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ const Team = () => {
                                         Illustartor
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        The magician of raster and vector graphics, who is ready to capture all the wonders of your world.
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ const Team = () => {
                                         Designer
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        An essential part of the creative department, happy to turn your most unexpected ideas into a real product.
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ const Team = () => {
                                         Developer
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        A professional in his own right who brings strong practices and experience to build software in a collaborative environment.
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ const Team = () => {
                                         Developer
                                     </div>
                                     <div className={style.team__text}>
-                                        A wise director of his company, fully committed to the business and expects the same from his employees
+                                        A jack of all trades who thrives on building quality systems that surpass end users' expectations.
                                     </div>
                                 </div>
                             </div>
