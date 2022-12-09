@@ -4,9 +4,9 @@ import { useEffect, useRef } from 'react'
 import { setKnowsPosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import sky from '../img/sky-dynamic_footage.png'
 import phone1 from '../img/knows/knows_phone-1.png'
 import phone2 from '../img/knows/knows_phone-2.png'
+import Clouds from '../components/Clouds/Clouds'
 
 const Knows = () => {
 
@@ -24,13 +24,17 @@ const Knows = () => {
             <div className={style.knows} ref={ref}>
                 <div className="container">
                     <div className={style.knows__inner}>
-                        <img src={sky} alt="I believe I can fly" className={style.knows__sky} />
+                        <Clouds />
                         <div className={style.knows__phones}>
                             <div className={style.knows__phone1}>
-                                <img src={phone1} alt="Your daily goal" />
+                                <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeft" style={{ animationDuration: '1.5s' }}>
+                                    <img src={phone1} alt="Your daily goal" />
+                                </AnimationOnScroll>
                             </div>
                             <div className={style.knows__phone2}>
-                                <img src={phone2} alt="Choose ml" />
+                                <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeft" style={{ animationDuration: '1s' }}>
+                                    <img src={phone2} alt="Choose ml" />
+                                </AnimationOnScroll>
                             </div>
                         </div>
                         <div className={style.knows__content}>

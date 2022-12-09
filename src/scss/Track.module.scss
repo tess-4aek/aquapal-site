@@ -42,15 +42,24 @@
         position: relative;
         margin-right: 175px;
     }
+    &__phone img{
+        max-width: 280px;
+    }
     &__watch1 {
         position: absolute;
         top: 70px;
-        left: -170px;
+        left: -140px;
+        & img {
+            max-width: 190px;
+        }
     }
     &__watch2 {
         position: absolute;
         top: 170px;
-        right: -170px;
+        right: -165px;
+        & img {
+            max-width: 210px;
+        }
     }
 }
 
@@ -98,7 +107,7 @@
                 max-width: 170px;
                 max-height: 325px;
             }
-            right: -125px;
+            right: -135px;
         }
     }
 }

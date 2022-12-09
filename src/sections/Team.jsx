@@ -38,6 +38,9 @@ const Team = () => {
                     <div className={style.team__subtitle}>
                         Application was made by Super Hero Software agency - Nitrix! <br /> Let’s introduce a small part of our friendly team.
                     </div>
+                    <div className={style.team__guideText}>
+                        Tap and you discover some interesting moments about us
+                    </div>
                     <div className={style.team__list}>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>

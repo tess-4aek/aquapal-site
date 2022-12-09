@@ -41,7 +41,7 @@ const AddWater = () => {
                             </AnimationOnScroll>
                         </div>
                         <div className={style.addWater__phone}>
-                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
+                            <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight" style={{ animationDuration: '1s' }}>
                                 <img src={phone} alt="Add water with smartphone" />
                             </AnimationOnScroll>
                         </div>

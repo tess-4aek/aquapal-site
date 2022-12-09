@@ -13,11 +13,6 @@
     &__inner {
         min-height: 990px;
     }
-    &__sky {
-        position: absolute;
-        z-index: 5;
-        top: 0;
-    }
     &__title {
         position: relative;
         font-size: 48px;
@@ -42,6 +37,9 @@
         justify-content: center;
         align-items: center;
         column-gap: 115px;
+        & img {
+            max-width: 280px;
+        }
     }
 }
 

@@ -23,6 +23,9 @@
     &__phones {
         position: relative;
         height: 730px;
+        & img {
+            max-width: 280px;
+        }
     }
     &__phone1 {
         position: absolute;
@@ -63,16 +66,12 @@
         }
         &__phones {
             height: 580px;
-        }
-        &__phone1 img {
-            max-width: 230px;
-            max-height: 500px;
-        }
-        &__phone2 {
             & img {
                 max-width: 230px;
                 max-height: 500px;
             }
+        }
+        &__phone2 {
             top: 55px;
             left: 200px;
         }

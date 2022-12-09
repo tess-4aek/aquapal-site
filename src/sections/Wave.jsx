@@ -20,7 +20,32 @@ const Wave = () => {
 
     return (
         <div className={style.wave} ref={ref}>
+            <div className={style.wave__bubbles}>
+                <ul>
+                <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
             <div className={style.wave__wrapper}>
+
                 <div className={style.wave__title}>Refresh your Life!</div>
                 <div className={style.wave__subtitle}>Now is the best time to start drink water</div>
                 <div className={style.wave__links}>
@@ -31,6 +56,7 @@ const Wave = () => {
                         <img src={playMarket} alt="Download from Play Market" style={window.innerWidth < 720 ? { width: '135px' } : { width: 'auto' }} />
                     </a>
                 </div>
+
             </div>
         </div>
     )

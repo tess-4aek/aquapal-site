@@ -1,11 +1,197 @@
 @import "vars.scss";
+
+.wave__bubbles {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+}
+
+.wave__bubbles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    --width: 20px;
+    height: 20px;
+    // background: rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 6.00248px rgba(255, 255, 255, 0.25);
+    animation: animate 25s linear infinite;
+    bottom: -50px;
+    border-radius: 100%;
+}
+
+.wave__bubbles li:nth-child(1) {
+    left: random(100) + vw;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+}
+
+.wave__bubbles li:nth-child(2) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.wave__bubbles li:nth-child(3) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.wave__bubbles li:nth-child(4) {
+    left: random(100) + vw;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.wave__bubbles li:nth-child(5) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.wave__bubbles li:nth-child(6) {
+    left: random(100) + vw;
+    width: 35px;
+    height: 35px;
+    animation-delay: 3s;
+}
+
+.wave__bubbles li:nth-child(7) {
+    left: random(100) + vw;
+    width: 35px;
+    height: 35px;
+    animation-delay: 7s;
+}
+
+.wave__bubbles li:nth-child(8) {
+    left: random(100) + vw;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.wave__bubbles li:nth-child(9) {
+    left: random(100) + vw;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.wave__bubbles li:nth-child(10) {
+    left: random(100) + vw;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.wave__bubbles li:nth-child(11) {
+    left: random(100) + vw;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+}
+
+.wave__bubbles li:nth-child(12) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.wave__bubbles li:nth-child(13) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.wave__bubbles li:nth-child(14) {
+    left: random(100) + vw;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.wave__bubbles li:nth-child(15) {
+    left: random(100) + vw;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.wave__bubbles li:nth-child(16) {
+    left: random(100) + vw;
+    width: 35px;
+    height: 35px;
+    animation-delay: 3s;
+}
+
+.wave__bubbles li:nth-child(17) {
+    left: random(100) + vw;
+    width: 35px;
+    height: 35px;
+    animation-delay: 7s;
+}
+
+.wave__bubbles li:nth-child(18) {
+    left: random(100) + vw;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.wave__bubbles li:nth-child(19) {
+    left: random(100) + vw;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.wave__bubbles li:nth-child(20) {
+    left: random(100) + vw;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-50vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
 .wave {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 75vh;
     background: linear-gradient(94.36deg, #407bff 0.27%, #40d1ff 100.45%);
     overflow: hidden;
     &:before,
@@ -16,21 +202,21 @@
 
         min-width: 260vw;
         min-height: 260vw;
-        background-color: #E5F6FF;
+        background-color: #e5f6ff;
         animation-name: rotate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
     &:before {
-        bottom: 45vh;
+        bottom: 55vh;
         border-radius: 44%;
-        animation-duration: 10s;
+        animation-duration: 12s;
     }
     &:after {
-        bottom: 42vh;
+        bottom: 52vh;
         opacity: 0.5;
         border-radius: 42%;
-        animation-duration: 10s;
+        animation-duration: 12s;
     }
     &__wrapper {
         position: absolute;
@@ -61,18 +247,6 @@
 
 @media (max-width: 1600px) {
     .wave {
-        min-height: 70vh;
-        &:before,
-        &:after {
-            min-width: 280vw;
-            min-height: 280vw;
-        }
-        &:before {
-            bottom: 50vh;
-        }
-        &:after {
-            bottom: 47vh;
-        }
         &__title {
             font-size: 36px;
             line-height: 50px;
@@ -89,7 +263,6 @@
 
 @media (max-width: 720px) {
     .wave {
-        min-height: 60vh;
         &:before,
         &:after {
             min-width: 200vw;
@@ -106,6 +279,9 @@
             letter-spacing: -0.4px;
             text-align: center;
         }
+    }
+    .wave__bubbles li:nth-child(odd) {
+        display: none;
     }
 }
 

@@ -19,7 +19,7 @@ import photoCard10 from '../img/memories/photoCard10.png'
 const Memories = () => {
 
     const dispatch = useDispatch()
-    
+
     const ref = useRef(null)
 
     useEffect(() => {
@@ -36,16 +36,66 @@ const Memories = () => {
                     grabCursor={true}
                     loop={true}
                 >
-                    <SwiperSlide><img src={photoCard1} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard2} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard4} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard5} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard6} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard7} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard8} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard9} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={photoCard10} alt="" /></SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard1} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard2} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard3} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard4} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard5} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard6} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard7} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard8} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard9} alt="" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className={style.memories__slide}>
+
+                            <img src={photoCard10} alt="" />
+                        </div>
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </div>

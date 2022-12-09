@@ -1,0 +1,22 @@
+.clouds {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    animation: surfing_sky 90s linear infinite;
+}
+
+@media (max-width: 720px) {
+    .clouds{
+        z-index: 0;
+    }
+}
+
+@keyframes surfing_sky {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}

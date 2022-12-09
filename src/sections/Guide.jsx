@@ -5,12 +5,12 @@ import { setGuidePosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { Parallax } from 'react-parallax';
 
-import sky from '../img/sky-dynamic_footage.png'
 import phone1 from '../img/guide/guide_phone-1.png'
 import phone2 from '../img/guide/guide_phone-2.png'
 import phone3 from '../img/guide/guide_phone-3.png'
 import background from '../img//guide/guide_back.png'
 import background_m from '../img//guide/guide_back_mobile.png'
+import Clouds from '../components/Clouds/Clouds'
 
 const Guide = () => {
 
@@ -23,14 +23,13 @@ const Guide = () => {
         dispatch(setGuidePosAction(guideOffsetTop.offsetTop))
     }, [])
 
-
     return (
         <div className={style.guideWrapper} ref={ref}>
-            <Parallax bgImage={window.innerWidth > 720 ? background : background_m} strength={200}>
+            <Parallax bgImage={window.innerWidth > 720 ? background : background_m} strength={300} bgImageStyle={{ transition: '.5' }}>
                 <div className={style.guide}>
                     <div className="container">
                         <div className={style.guide__inner}>
-                            <img src={sky} alt="I believe I can fly" className={style.guide__sky} />
+                            <Clouds />
                             <div className={style.guide__title}>
                                 <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '.5s' }}>
                                     Drink water and <br /> Grow your plant
@@ -38,7 +37,7 @@ const Guide = () => {
                             </div>
                             <div className={style.guide__text}>
                                 <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
-                                    Tracking water in its basic stages:Drink water at a set time, record it in the app and follow the evolution of your plant
+                                    Tracking water in its basic stages: <br /> Drink water at a set time, record it in the app and follow the evolution of your plant
                                 </AnimationOnScroll>
                             </div>
                             <div className={style.guide__demos}>
