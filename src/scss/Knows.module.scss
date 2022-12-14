@@ -62,7 +62,8 @@
 @media (max-width: 1600px) {
     .knows {
         &__inner {
-            min-height: 775px;
+            min-height: 580px;
+            padding: 100px 0;
         }
         &__phones {
             height: 580px;
@@ -72,8 +73,11 @@
             }
         }
         &__phone2 {
-            top: 55px;
+            top: 0;
             left: 200px;
+        }
+        &__phone1 {
+            top: 85px;
         }
         &__content {
             max-width: 520px;

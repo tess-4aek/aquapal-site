@@ -122,10 +122,15 @@
 
 @media (max-width: 720px) {
     .reviews {
+        &__inner{
+            padding-top: 50px;
+        }
         &__card {
             position: unset;
-            margin-bottom: 20px;
             max-width: 100%;
+            & + .reviews__card{
+                margin-top: 20px;
+            }
         }
         &__title {
             font-size: 28px;

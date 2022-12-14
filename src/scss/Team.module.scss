@@ -145,17 +145,28 @@
 @media (max-width: 720px) {
     .team {
         padding: 65px 0;
+        &__title{
+            font-size: 28px;
+            line-height: 38px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            line-height: 24px;
+        }
         &__item {
             align-items: center;
             flex-direction: column;
             text-align: center;
             row-gap: 10px;
         }
+        &__list{
+            margin-top: 0;
+        }
         &__name,
         .team__position,
         .team__text {
-            font-size: 16px;
-            line-height: 140%;
+            font-size: 18px;
+            line-height: 24зч;
             margin-top: 5px;
         }
         &__position {
@@ -164,13 +175,13 @@
         &__guideText {
             display: block;
             text-align: center;
-            max-width: 200px;
+            max-width: 210px;
             font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 22px;
             letter-spacing: -0.4px;
             color: $blue;
-            margin: 10px auto 0;
+            margin: 10px auto;
         }
     }
 }

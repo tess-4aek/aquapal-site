@@ -279,6 +279,10 @@
             letter-spacing: -0.4px;
             text-align: center;
         }
+        &__wrapper{
+            bottom: 25%;
+            transform: translateY(25%);
+        }
     }
     .wave__bubbles li:nth-child(odd) {
         display: none;
