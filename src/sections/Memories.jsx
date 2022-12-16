@@ -37,62 +37,52 @@ const Memories = () => {
                     loop={true}
                 >
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
                             <img src={photoCard1} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(-10deg)'}}>
                             <img src={photoCard2} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
                             <img src={photoCard3} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(-10deg)'}}>
                             <img src={photoCard4} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
                             <img src={photoCard5} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(-10deg)'}}>
                             <img src={photoCard6} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
                             <img src={photoCard7} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(-10deg)'}}>
                             <img src={photoCard8} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
                             <img src={photoCard9} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={style.memories__slide}>
-
+                        <div className={style.memories__slide} style={{transform: 'rotateZ(-10deg)'}}>
                             <img src={photoCard10} alt="" />
                         </div>
                     </SwiperSlide>

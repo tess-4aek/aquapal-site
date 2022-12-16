@@ -1,10 +1,10 @@
 import style from '../scss/Wave.module.scss'
+import { useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
+import { setWavePosAction } from '../store/sitePosReducer'
 
 import appStore from '../img/app-store_btn.svg'
 import playMarket from '../img/play-market_btn.svg'
-import { setWavePosAction } from '../store/sitePosReducer'
-import { useEffect, useRef } from 'react'
 
 const Wave = () => {
 

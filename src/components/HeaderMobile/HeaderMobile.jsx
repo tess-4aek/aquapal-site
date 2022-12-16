@@ -1,7 +1,11 @@
+import style from './HeaderMobile.module.scss'
 import { useRef, useState } from 'react'
 import Contacts from '../Contacts/Contacts'
+
 import Logo from '../Logo/Logo'
-import style from './HeaderMobile.module.scss'
+
+import appStore from '../../img/app-store_btn.svg'
+import playMarket from '../../img/play-market_btn.svg'
 
 
 const HeaderMobile = () => {
@@ -16,10 +20,13 @@ const HeaderMobile = () => {
             setMenuState(false)
             menu.current.classList.toggle(style._active)
             menuList.current.classList.toggle(style._active)
+            document.querySelector('html').style.overflowY = 'auto'
         } else {
             setMenuState(true)
             menu.current.classList.toggle(style._active)
             menuList.current.classList.toggle(style._active)
+            document.querySelector('html').style.overflowY = 'hidden'
+
         }
     }
 
@@ -42,6 +49,14 @@ const HeaderMobile = () => {
                         </ul>
                         <div className={style.headerMobile__contactsWrapper}>
                             <Contacts />
+                        </div>
+                        <div className={style.headerMobile__links}>
+                            <a href="#">
+                                <img src={appStore} alt="Download from App Store" />
+                            </a>
+                            <a href="#">
+                                <img src={playMarket} alt="Download from Play Market" />
+                            </a>
                         </div>
                     </nav>
                 </div>

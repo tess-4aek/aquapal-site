@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux'
 import { useEffect, useRef } from 'react'
 import { setGuidePosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { Parallax } from 'react-parallax';
 
 import phone1 from '../img/guide/guide_phone-1.png'
 import phone2 from '../img/guide/guide_phone-2.png'
@@ -11,6 +10,7 @@ import phone3 from '../img/guide/guide_phone-3.png'
 import background from '../img//guide/guide_back.png'
 import background_m from '../img//guide/guide_back_mobile.png'
 import Clouds from '../components/Clouds/Clouds'
+import Parallax from '../components/Parallax/Parallax'
 
 const Guide = () => {
 
@@ -25,7 +25,9 @@ const Guide = () => {
 
     return (
         <div className={style.guideWrapper} ref={ref}>
-            <Parallax bgImage={window.innerWidth > 720 ? background : background_m} strength={300} bgImageStyle={{ transition: '.5' }}>
+            <Parallax
+                img={window.innerWidth > 720 ? background : background_m}
+                height={'auto'}>
                 <div className={style.guide}>
                     <div className="container">
                         <div className={style.guide__inner}>
@@ -55,6 +57,7 @@ const Guide = () => {
                     </div>
                 </div>
             </Parallax>
+
         </div>
     )
 }

@@ -70,10 +70,13 @@
 @media (max-width: 720px) {
     .mainScreenWrapper{
         height: fit-content;
+        background-image: url(../img//main-screen/main-banner_parralax.png);
+        background-size: contain;
     }
     .mainScreen {
         min-height: 490px;
         background-image: url(../img/main-screen/main-banner_mobile.png);
+        background-size: contain;
         padding-top: 40px;
         &__subtitle {
             font-weight: 700;

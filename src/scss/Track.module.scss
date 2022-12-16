@@ -146,8 +146,8 @@
             position: unset;
             margin: 0;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             row-gap: 30px;
         }
         &__watch1 {

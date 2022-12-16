@@ -3,13 +3,13 @@ import { useDispatch } from 'react-redux'
 import { setProgressPosAction } from '../store/sitePosReducer'
 import { useEffect, useRef } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { Parallax } from 'react-parallax';
 
 import phone1 from '../img/progress/progress_phone-1.png'
 import phone2 from '../img/progress/progress_phone-2.png'
 import background from '../img/progress/progress_back.png'
 import background_m from '../img/progress/progress_back_mobile.png'
 import Clouds from '../components/Clouds/Clouds'
+import Parallax from '../components/Parallax/Parallax'
 
 const Progress = () => {
 
@@ -25,7 +25,7 @@ const Progress = () => {
 
     return (
         <div className={style.progressWrapper} ref={ref}>
-            <Parallax bgImage={window.innerWidth > 720 ? background : background_m} strength={300}>
+            <Parallax img={window.innerWidth > 720 ? background : background_m} height={'auto'}>
                 <div className={style.progress}>
                     <div className="container">
                         <div className={style.progress__inner}>
