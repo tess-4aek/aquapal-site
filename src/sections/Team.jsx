@@ -27,6 +27,12 @@ const Team = () => {
         dispatch(setTeamPosAction(teamOffsetTop.offsetTop))
     }, [])
 
+    const onClick = () => {
+        if (window.innerWidth < 720) document.querySelectorAll(`.${style.team__avatar}`).forEach(e => {
+            e.classList.toggle(style._active)
+        })
+    }
+
 
     return (
         <div id='team' className={style.team} ref={ref}>
@@ -44,7 +50,7 @@ const Team = () => {
                     <div className={style.team__list}>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={NikitaAxyonov} alt="Nikita Axyonov – Founder & CEO" />
                                     <div className={style.team__sign}>
                                         <img src={Cancer} alt="Cancer" />
@@ -69,7 +75,7 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={MaxLysiahin} alt="Max Lysiahin – PM" />
                                     <div className={style.team__sign}>
                                         <img src={Vigro} alt="Vigro" />
@@ -94,7 +100,7 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={AlinaShevtsova} alt="Alina Shevtsova – Illustartor" />
                                     <div className={style.team__sign}>
                                         <img src={Gemini} alt="Gemini" />
@@ -119,7 +125,7 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={HannaTyrinova} alt="Hanna Tyrinova – Designer" />
                                     <div className={style.team__sign}>
                                         <img src={Gemini} alt="Gemini" />
@@ -144,7 +150,7 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={IlliaBorshchov} alt="Illia Borshchov – Developer" />
                                     <div className={style.team__sign}>
                                         <img src={Libra} alt="Libra" />
@@ -169,7 +175,7 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar}>
+                                <div className={style.team__avatar} onTouchEnd={onClick}>
                                     <img src={RuslanVyshnevskyi} alt="Ruslan Vyshnevskyi – Developer" />
                                     <div className={style.team__sign}>
                                         <img src={Aries} alt="Aries" />

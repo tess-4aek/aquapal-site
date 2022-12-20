@@ -1,5 +1,4 @@
 @import "vars.scss";
-
 .wave__bubbles {
     position: absolute;
     width: 100vw;
@@ -178,7 +177,6 @@
         transform: translateY(0) rotate(0deg);
         opacity: 1;
     }
-
     100% {
         transform: translateY(-50vh) rotate(720deg);
         opacity: 0;
@@ -199,7 +197,6 @@
         content: "";
         position: absolute;
         left: 50%;
-
         min-width: 260vw;
         min-height: 260vw;
         background-color: #e5f6ff;
@@ -265,8 +262,9 @@
     .wave {
         &:before,
         &:after {
-            min-width: 200vw;
-            min-height: 200vw;
+            min-width: 300vw;
+            min-height: 280vw;
+            animation-duration: 7s;
         }
         &__title {
             font-size: 28px;
@@ -279,7 +277,7 @@
             letter-spacing: -0.4px;
             text-align: center;
         }
-        &__wrapper{
+        &__wrapper {
             bottom: 25%;
             transform: translateY(25%);
         }

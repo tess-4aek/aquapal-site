@@ -3,10 +3,10 @@
 }
 
 .mainScreen {
-    min-height: 930px;
+    height: calc(100vh - 80px);
     background-image: url(../img/main-screen/main-banner.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     padding-top: 200px;
     &__inner {
@@ -35,10 +35,13 @@
         width: 210px;
         font-size: 17px;
         font-weight: 800;
-        line-height: 23px;
+        line-height: 22px;
         text-transform: uppercase;
         color: #ffffff;
         margin-bottom: 40px;
+        & img {
+            max-width: 50px;
+        }
     }
     &__links {
         display: flex;
@@ -49,7 +52,7 @@
 @media (max-width: 1600px) {
     .mainScreen {
         background-image: url(../img/main-screen/main-banner_laptop.png);
-        min-height: 675px;
+        // min-height: 675px;
         padding-top: 100px;
         &__inner {
             min-height: 410px;
@@ -68,7 +71,7 @@
 }
 
 @media (max-width: 720px) {
-    .mainScreenWrapper{
+    .mainScreenWrapper {
         height: fit-content;
         background-image: url(../img//main-screen/main-banner_parralax.png);
         background-size: contain;

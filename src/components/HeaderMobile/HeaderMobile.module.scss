@@ -28,7 +28,8 @@
             list-style: none;
             padding-bottom: 50px;
             border-bottom: 1px solid $blue;
-            li > a {
+            li>a {
+                width: 100%;
                 text-decoration: none;
                 color: $black;
                 font-weight: 700;
@@ -41,11 +42,11 @@
                     color: $blue;
                 }
             }
-            li + li{
+            li+li {
                 border-top: 1px solid rgba(73, 167, 255, 0.1);
             }
         }
-        &._active{
+        &._active {
             transform: translateX(0);
         }
     }
@@ -73,7 +74,7 @@
             border-radius: 1px;
             transition: .2s;
         }
-        &._active{
+        &._active {
             .headerMobile__burgerMenu_element1 {
                 transform: translateX(50%) rotateZ(45deg);
                 top: 50%;
@@ -89,14 +90,14 @@
             }
         }
     }
-    &__contactsWrapper{
+    &__contactsWrapper {
         padding: 60px 0 25px;
     }
     &__links {
         display: flex;
         justify-content: flex-start;
         column-gap: 10px;
-        & img{
+        & img {
             height: 40px;
             width: 100%;
         }
@@ -104,7 +105,7 @@
 }
 
 @media(max-width: 720px) {
-    .headerMobile{
+    .headerMobile {
         display: flex;
     }
 }

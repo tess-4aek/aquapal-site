@@ -52,6 +52,9 @@
         line-height: 22px;
         text-decoration: none;
         color: $black;
+        & img{
+            max-width: 40px;
+        }
     }
 }
 

@@ -2,6 +2,7 @@ import style from '../scss/Memories.module.scss'
 import { useDispatch } from 'react-redux'
 import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { FreeMode } from "swiper";
 import { setMemoriesPosAction } from '../store/sitePosReducer';
 import 'swiper/css';
 
@@ -33,8 +34,9 @@ const Memories = () => {
             <div className={style.memories}>
                 <Swiper
                     slidesPerView={5}
-                    grabCursor={true}
                     loop={true}
+                    freeMode={true}
+                    modules={[FreeMode]}
                 >
                     <SwiperSlide>
                         <div className={style.memories__slide} style={{transform: 'rotateZ(10deg)'}}>
