@@ -27,7 +27,7 @@ const Team = () => {
         dispatch(setTeamPosAction(teamOffsetTop.offsetTop))
     }, [])
 
-    const onClick = () => {
+    function onClick() {
         if (window.innerWidth < 720) document.querySelectorAll(`.${style.team__avatar}`).forEach(e => {
             e.classList.toggle(style._active)
         })
@@ -50,7 +50,7 @@ const Team = () => {
                     <div className={style.team__list}>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={style.team__avatar} onTouchEnd={() => onClick()}>
                                     <img src={NikitaAxyonov} alt="Nikita Axyonov – Founder & CEO" />
                                     <div className={style.team__sign}>
                                         <img src={Cancer} alt="Cancer" />

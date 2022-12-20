@@ -1,10 +1,12 @@
 @import "../../scss/vars.scss";
 .headerMobile {
+    position: fixed;
+    width: 100vw;
     display: none;
     align-items: center;
     height: 80px;
     background-color: #f8fbff;
-    z-index: 15;
+    z-index: 9999;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -21,18 +23,18 @@
         padding: 15px 15px 0 15px;
         transform: translateX(100%);
         z-index: 10;
-        transition: .5s;
+        transition: 0.5s;
         ul {
+            max-width: 260px;
             display: flex;
             flex-direction: column;
             list-style: none;
             padding-bottom: 50px;
             border-bottom: 1px solid $blue;
-            li>a {
+            li > a {
                 width: 100%;
                 text-decoration: none;
                 color: $black;
-                font-weight: 700;
                 font-size: 18px;
                 line-height: 140%;
                 letter-spacing: -0.4px;
@@ -40,9 +42,10 @@
                 transition: 0.5s;
                 &:hover {
                     color: $blue;
+                    font-weight: 700;
                 }
             }
-            li+li {
+            li + li {
                 border-top: 1px solid rgba(73, 167, 255, 0.1);
             }
         }
@@ -62,7 +65,9 @@
             top: 14px;
             right: 3px;
             border-radius: 1px;
-            transition: .2s;
+            transform-origin: center;
+
+            // transition: 0.5s;
         }
         &_element2 {
             position: absolute;
@@ -72,26 +77,39 @@
             top: 23px;
             right: 3px;
             border-radius: 1px;
-            transition: .2s;
+            transform-origin: center;
+            
+            // transition: 0.5s;
         }
         &._active {
             .headerMobile__burgerMenu_element1 {
-                transform: translateX(50%) rotateZ(45deg);
-                top: 50%;
-                right: 50%;
-                height: 1.5px;
+                // transform: 
+                // // translateX(50%)
+                //     rotateZ(45deg);
+                // top: 50%;
+                // // right: 50%;
+                // animation-play-state: running;
+            // animation-fill-mode: forwards;
+
+                // height: 1.5px;
             }
             .headerMobile__burgerMenu_element2 {
-                width: 30px;
-                transform: translateX(50%) rotateZ(-45deg);
-                top: 50%;
-                right: 50%;
-                height: 1.5px;
+                // width: 30px;
+                // transform: 
+                // // translateX(50%)
+                //     rotateZ(-45deg);
+                // top: 50%;
+                // // right: 50%;
+                animation-play-state: running;
+            animation-fill-mode: forwards;
+
+
+                // height: 1.5px;
             }
         }
     }
     &__contactsWrapper {
-        padding: 60px 0 25px;
+        padding: 25px 0;
     }
     &__links {
         display: flex;
@@ -104,8 +122,41 @@
     }
 }
 
-@media(max-width: 720px) {
+@media (max-width: 720px) {
     .headerMobile {
         display: flex;
+    }
+}
+
+@keyframes anim1 {
+    0% {
+        width: 30px;
+        transform: unset;
+    }
+    20% {
+        width: 30px;
+        transform: unset;
+    }
+    100% {
+        width: 30px;
+        transform: rotateZ(45deg);
+        top: 50%;
+        animation-direction: reverse;
+    }
+}
+@keyframes anim2 {
+    0% {
+        width: 20px;
+        transform: unset;
+    }
+    20% {
+        width: 30px;
+        transform: unset;
+    }
+    100% {
+        width: 30px;
+        transform: rotateZ(-45deg);
+        top: 50%;
+        animation-direction: reverse;
     }
 }

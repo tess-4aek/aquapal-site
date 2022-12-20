@@ -1,5 +1,6 @@
 import style from './HeaderMobile.module.scss'
 import { useRef, useState } from 'react'
+import scrollLock from 'scroll-lock';
 import Contacts from '../Contacts/Contacts'
 
 import Logo from '../Logo/Logo'
@@ -14,19 +15,19 @@ const HeaderMobile = () => {
 
     const menu = useRef(null)
     const menuList = useRef(null)
-
+    scrollLock.disablePageScroll()
+    console.log(scrollLock.getScrollState());
     const toggleMenuState = () => {
         if (menuState === true) {
             setMenuState(false)
             menu.current.classList.toggle(style._active)
             menuList.current.classList.toggle(style._active)
-            document.querySelector('html').style.overflowY = 'auto'
+            scrollLock.enablePageScroll()
         } else {
             setMenuState(true)
             menu.current.classList.toggle(style._active)
             menuList.current.classList.toggle(style._active)
-            document.querySelector('html').style.overflowY = 'hidden'
-
+            scrollLock.disablePageScroll()
         }
     }
 

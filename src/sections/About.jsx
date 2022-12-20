@@ -28,7 +28,7 @@ const About = () => {
             <div className="container">
                 <div className={style.about__inner}>
                     <div className={style.about__text}>
-                        Aqua Pal is a Water abouter, that allows you to about how much water you drink with a click of a button. This is just what you need to make sure you stay healthy, hydrated and energetic!
+                    Aqua Pal is a Water Tracker, that allows you to track how much water you drink with a click of a button. This is just what you need to make sure you stay healthy, hydrated and energetic!
                     </div>
                     <div className={style.about__demos}>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{animationDuration: '.5s'}}>

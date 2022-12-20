@@ -264,7 +264,13 @@
         &:after {
             min-width: 300vw;
             min-height: 280vw;
-            animation-duration: 7s;
+            animation-duration: 9s;
+        }
+        &::before{
+            bottom: 65vh;
+        }
+        &::after{
+            bottom: 62vh;
         }
         &__title {
             font-size: 28px;

@@ -33,16 +33,8 @@
 }
 
 @media (max-width: 720px) {
-    .linksFixed, .linksFixedWrapper{
-        height: 40px;
-    }
-    .linksFixed{
-        &__links{
-            display: none;
-        }
-        & img{
-            max-width: 24px;
-        }
+    .linksFixedWrapper{
+        display: none;
     }
 }
 

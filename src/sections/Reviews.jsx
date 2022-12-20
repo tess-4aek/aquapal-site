@@ -69,6 +69,9 @@ const Reviews = () => {
                                     <img src={star} alt="star" />
                                 </div>
                             </div>
+                            <div className={style.reviews__point}>
+                                Happy User
+                            </div>
                         </AnimationOnScroll>
                     </div>
                     <div className={`${style.reviews__card} ${style.reviews__card_3}`}>
@@ -92,6 +95,9 @@ const Reviews = () => {
                                     <img src={star} alt="star" />
                                 </div>
                             </div>
+                            <div className={style.reviews__point}>
+                                Happy User
+                            </div>
                         </AnimationOnScroll>
                     </div>
                     <div className={`${style.reviews__card} ${style.reviews__card_4}`}>
@@ -114,6 +120,9 @@ const Reviews = () => {
                                     <img src={star} alt="star" />
                                     <img src={star} alt="star" />
                                 </div>
+                            </div>
+                            <div className={style.reviews__point}>
+                                Happy User
                             </div>
                         </AnimationOnScroll>
                     </div>
