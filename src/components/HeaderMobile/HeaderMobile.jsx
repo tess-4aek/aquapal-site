@@ -15,8 +15,7 @@ const HeaderMobile = () => {
 
     const menu = useRef(null)
     const menuList = useRef(null)
-    scrollLock.disablePageScroll()
-    console.log(scrollLock.getScrollState());
+    
     const toggleMenuState = () => {
         if (menuState === true) {
             setMenuState(false)
