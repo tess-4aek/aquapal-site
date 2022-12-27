@@ -28,16 +28,16 @@ const About = () => {
             <div className="container">
                 <div className={style.about__inner}>
                     <div className={style.about__text}>
-                    Aqua Pal is a Water Tracker, that allows you to track how much water you drink with a click of a button. This is just what you need to make sure you stay healthy, hydrated and energetic!
+                        Aqua Pal is a Water Tracker, that allows you to track how much water you drink with a click of a button. The attractive design is what makes you open the app again and again and constantly refresh your water balance.
                     </div>
                     <div className={style.about__demos}>
-                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{animationDuration: '.5s'}}>
+                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <img src={phone1} alt="Your daily goal" />
                         </AnimationOnScroll>
-                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{animationDuration: '1s'}}>
+                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '1s' }}>
                             <img src={phone2} alt="Main screen" />
                         </AnimationOnScroll>
-                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{animationDuration: '1.5s'}}>
+                        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '1.5s' }}>
                             <img src={phone3} alt="Your statistic" />
                         </AnimationOnScroll>
                     </div>

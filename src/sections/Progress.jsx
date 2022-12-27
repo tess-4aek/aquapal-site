@@ -50,8 +50,8 @@ const Progress = () => {
                                 </div>
                                 <div className={style.progress__text}>
                                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
-                                        Monitor your hydration progress. <br />
-                                        Aqua Pal makes it fast and easy to set your hydration goal and then track your daily water intake progress. You can also view previous dates with a simple tap.
+                                        Analyse your hydration progress. <br />
+                                        Aqua Pal is an application that is aimed at constantly renewing the water balance. Set a goal and track your daily water intake. In order to conduct a complete analysis, review previous data.
                                     </AnimationOnScroll>
                                 </div>
                             </div>

@@ -30,8 +30,8 @@ const AddWater = () => {
                         </div>
                         <div className={style.addWater__text}>
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" style={{ animationDuration: '1s' }}>
-                                Add water in different volumes: system-calculated optimal amount, manually or by sips, if you do not know the volume of the glass from which you drink.
-                            </AnimationOnScroll>
+
+                                Add water in different volumes: system-calculated optimal amount, manually or by sips, if you do not know the volume of the glass from which you drink. For effective water intake, choose a convenient device and track your water rate.                            </AnimationOnScroll>
                         </div>
                     </div>
                     <div className={style.addWater__images}>
