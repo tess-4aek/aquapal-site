@@ -97,5 +97,11 @@
             line-height: 140%;
             letter-spacing: -0.4px;
         }
+        &__moreList {
+            grid-template-columns: unset;
+        }
+        &__soonList {
+            grid-template-columns: unset;
+        }
     }
 }

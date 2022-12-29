@@ -31,7 +31,7 @@ const HeaderMobile = () => {
     }
 
     return (
-        <div className={style.headerMobile} id="home">
+        <div className={style.headerMobile}>
             <div className="container">
                 <div className={style.headerMobile__inner}>
                     <Logo />
