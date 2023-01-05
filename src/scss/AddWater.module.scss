@@ -75,7 +75,20 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1044px) {
+    .addWater {
+        &__title {
+            font-size: 30px;
+            line-height: 42px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
     .addWater {
         padding: 65px 0;
         &__inner {
