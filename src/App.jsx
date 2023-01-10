@@ -30,8 +30,6 @@ const App = () => {
 
   const [loaded, setLoaded] = useState(false)
 
-
-  scrollLock.disablePageScroll()
   // global.onload = () => {
 
   //   setTimeout(() => {
@@ -47,10 +45,14 @@ const App = () => {
 
   setTimeout(() => {
     setLoaded(true)
-    scrollLock.enablePageScroll()
   }, 5000)
 
-            
+  if (loaded == false) {
+    document.querySelector('html').style.overflow = 'hidden'
+  } else {
+    document.querySelector('html').style.overflow = 'auto'
+  }
+
 
   return (
     <div className="App" style={{ position: 'relative' }}>
