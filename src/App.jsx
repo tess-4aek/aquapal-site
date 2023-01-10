@@ -1,5 +1,6 @@
 import './scss/App.scss'
 import './scss/animate.min.css'
+import scrollLock from 'scroll-lock';
 
 import MainScreen from './sections/MainScreen'
 import About from './sections/About'
@@ -30,7 +31,7 @@ const App = () => {
   const [loaded, setLoaded] = useState(false)
 
 
-
+  scrollLock.disablePageScroll()
   // global.onload = () => {
 
   //   setTimeout(() => {
@@ -46,7 +47,10 @@ const App = () => {
 
   setTimeout(() => {
     setLoaded(true)
+    scrollLock.enablePageScroll()
   }, 5000)
+
+            
 
   return (
     <div className="App" style={{ position: 'relative' }}>
