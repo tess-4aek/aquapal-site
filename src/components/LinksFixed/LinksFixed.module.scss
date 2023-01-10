@@ -6,8 +6,8 @@
 
 .linksFixed {
     position: fixed;
-    transform: translate3d(0, 0, 0);
-    // bottom: -90px;
+    // transform: translate3d(0, 0, 0);
+    bottom: -90px;
     bottom: 0;
     opacity: 0;
     left: 0;
@@ -27,12 +27,12 @@
         column-gap: 25px;
     }
     &.linksFixed_fixed {
-        // animation: linksAnimationStart .5s;
-        animation: fadeInUp 0.5s;
+        animation: linksAnimationStart .5s;
+        // animation: fadeInUp 0.5s;
         animation-fill-mode: forwards;
     }
     &.linksFixed_animationEnd {
-        animation: fadeOutDown 0.5s;
+        animation: linksAnimationEnd 0.5s;
         animation-fill-mode: forwards;
     }
 }
@@ -45,11 +45,11 @@
 
 @keyframes linksAnimationStart {
     0% {
-        transform: translate3d(0, 0, 0);
+        // transform: translate3d(0, 0, 0);
         bottom: -90px;
     }
     100% {
-        transform: translate3d(0, 0, 0);
+        // transform: translate3d(0, 0, 0);
         bottom: 0;
         opacity: 1;
     }
@@ -57,12 +57,12 @@
 
 @keyframes linksAnimationEnd {
     0% {
-        transform: translate3d(0, 0, 0);
+        // transform: translate3d(0, 0, 0);
         bottom: 0;
         opacity: 1;
     }
     100% {
-        transform: translate3d(0, 0, 0);
+        // transform: translate3d(0, 0, 0);
         bottom: -90px;
         opacity: 0;
     }
