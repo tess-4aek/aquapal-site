@@ -1,5 +1,5 @@
 import './scss/App.scss'
-import 'animate.css/animate.min.css'
+import './scss/animate.min.css'
 
 import MainScreen from './sections/MainScreen'
 import About from './sections/About'
