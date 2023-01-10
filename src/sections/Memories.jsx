@@ -28,7 +28,7 @@ const Memories = () => {
         dispatch(setMemoriesPosAction(memoriesOffsetTop.offsetTop))
     }, [])
 
-    document.querySelector('.swiper-wrapper').style.transform = 'translateX(-2335px) !important'
+    // document.querySelector('.swiper-wrapper').style.transform = 'translateX(-2335px) !important'
 
     return (
         <div className={style.memoriesWrapper} ref={ref}>
