@@ -1,10 +1,10 @@
 import style from '../scss/Memories.module.scss'
 import { useDispatch } from 'react-redux'
 import { useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Mousewheel } from "swiper";
+// import { Swiper, SwiperSlide } from 'swiper/react'
+// import { FreeMode, Mousewheel } from "swiper";
 import { setMemoriesPosAction } from '../store/sitePosReducer';
-import 'swiper/css';
+// import 'swiper/css';
 
 import photoCard1 from '../img/memories/photoCard1.png'
 import photoCard2 from '../img/memories/photoCard2.png'
@@ -16,6 +16,7 @@ import photoCard7 from '../img/memories/photoCard7.png'
 import photoCard8 from '../img/memories/photoCard8.png'
 import photoCard9 from '../img/memories/photoCard9.png'
 import photoCard10 from '../img/memories/photoCard10.png'
+import Slider from '../components/Slider/Slider';
 
 const Memories = () => {
 
@@ -28,13 +29,47 @@ const Memories = () => {
         dispatch(setMemoriesPosAction(memoriesOffsetTop.offsetTop))
     }, [])
 
+    // document.querySelector('.swiper-wrapper').style.transform = 'translateX(-2335px) !important'
+
 
     return (
         <div className={style.memoriesWrapper} ref={ref}>
             <div className={style.memoriesContainer}>
 
                 <div className={style.memories}>
-                    <Swiper
+                    <Slider>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(10deg)' }}>
+                            <img src={photoCard1} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(-10deg)' }}>
+                            <img src={photoCard2} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(10deg)' }}>
+                            <img src={photoCard3} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(-10deg)' }}>
+                            <img src={photoCard4} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(10deg)' }}>
+                            <img src={photoCard5} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(-10deg)' }}>
+                            <img src={photoCard6} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(10deg)' }}>
+                            <img src={photoCard7} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(-10deg)' }}>
+                            <img src={photoCard8} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(10deg)' }}>
+                            <img src={photoCard9} alt="" />
+                        </div>
+                        <div className={style.memories__slide} style={{ transform: 'rotateZ(-10deg)' }}>
+                            <img src={photoCard10} alt="" />
+                        </div>
+                    </Slider>
+                    {/* <Swiper
                         modules={[FreeMode, Mousewheel]}
                         slidesPerView={5}
                         loop={true}
@@ -94,7 +129,10 @@ const Memories = () => {
                                 <img src={photoCard10} alt="" />
                             </div>
                         </SwiperSlide>
-                    </Swiper>
+                    </Swiper> */}
+
+
+
                 </div>
             </div>
         </div>

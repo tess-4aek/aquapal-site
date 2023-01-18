@@ -99,7 +99,24 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1044px) {
+    .progress {
+        &__content {
+            max-width: 400px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 42px;
+            width: fit-content;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
     .progress {
         padding: 65px 0;
         background-size: cover;
@@ -115,6 +132,7 @@
             justify-content: center;
             flex-wrap: wrap;
             row-gap: 30px;
+            column-gap: 20px;
         }
         &__phone1 {
             position: unset;

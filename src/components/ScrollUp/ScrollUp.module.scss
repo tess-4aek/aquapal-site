@@ -21,7 +21,13 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1044px) {
+    .scrollUp {
+        right: 10px;
+    }
+}
+
+@media (max-width: 860px) {
     .scrollUp {
         display: none;
         right: 10px;

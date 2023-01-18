@@ -27,12 +27,17 @@ const Team = () => {
         dispatch(setTeamPosAction(teamOffsetTop.offsetTop))
     }, [])
 
-    function onClick() {
-        if (window.innerWidth < 720) document.querySelectorAll(`.${style.team__avatar}`).forEach(e => {
-            e.classList.toggle(style._active)
-        })
+    function onClick(e) {
+        if (window.innerWidth < 720) e.parentNode.classList.toggle(style._active)
     }
 
+    // function onClick(e) {
+    //     if (window.innerWidth < 720) document.querySelectorAll(`.${style.team__avatar}`).forEach(e => {
+    //         console.log(e);
+    //         e.classList.toggle(style._active)
+    //         if(e.classList.contains(style._active))
+    //     })
+    // }
 
     return (
         <div id='team' className={style.team} ref={ref}>
@@ -50,7 +55,8 @@ const Team = () => {
                     <div className={style.team__list}>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={() => onClick()}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={NikitaAxyonov} alt="Nikita Axyonov – Founder & CEO" />
                                     <div className={style.team__sign}>
                                         <img src={Cancer} alt="Cancer" />
@@ -75,7 +81,8 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={MaxLysiahin} alt="Max Lysiahin – PM" />
                                     <div className={style.team__sign}>
                                         <img src={Vigro} alt="Vigro" />
@@ -100,7 +107,8 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={AlinaShevtsova} alt="Alina Shevtsova – Illustartor" />
                                     <div className={style.team__sign}>
                                         <img src={Gemini} alt="Gemini" />
@@ -125,7 +133,8 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={HannaTyrinova} alt="Hanna Tyrinova – Designer" />
                                     <div className={style.team__sign}>
                                         <img src={Gemini} alt="Gemini" />
@@ -150,7 +159,8 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={IlliaBorshchov} alt="Illia Borshchov – Developer" />
                                     <div className={style.team__sign}>
                                         <img src={Libra} alt="Libra" />
@@ -175,7 +185,8 @@ const Team = () => {
                         </AnimationOnScroll>
                         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp" style={{ animationDuration: '.5s' }}>
                             <div className={style.team__item}>
-                                <div className={style.team__avatar} onTouchEnd={onClick}>
+                                <div className={`${style.team__avatar} ${window.innerWidth > 720 ? style.team__avatarHover : null}`}>
+                                    <div className={style.team__avatarWrapper} onClick={e => onClick(e.target)}></div>
                                     <img src={RuslanVyshnevskyi} alt="Ruslan Vyshnevskyi – Developer" />
                                     <div className={style.team__sign}>
                                         <img src={Aries} alt="Aries" />

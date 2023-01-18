@@ -8,7 +8,7 @@ import playMarket from '../img/play-market_btn.svg'
 
 const MainScreen = () => {
     return (
-        <div className={style.mainScreenWrapper}>
+        <div className={style.mainScreenWrapper} id="home">
             <Header />
             <HeaderMobile />
             <div className={style.mainScreen}>

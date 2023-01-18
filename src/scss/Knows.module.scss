@@ -95,11 +95,10 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1044px) {
     .knows {
-        &__inner {
-            flex-direction: column-reverse;
-            padding: 65px 0;
+        &__content {
+            max-width: 420px;
         }
         &__title {
             font-size: 28px;
@@ -110,6 +109,15 @@
             font-size: 18px;
             line-height: 140%;
             letter-spacing: -0.4px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .knows {
+        &__inner {
+            flex-direction: column-reverse;
+            padding: 65px 0;
         }
         &__phones {
             height: unset;

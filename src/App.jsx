@@ -1,5 +1,6 @@
 import './scss/App.scss'
-import 'animate.css/animate.min.css'
+import './scss/animate.min.css'
+import scrollLock from 'scroll-lock';
 
 import MainScreen from './sections/MainScreen'
 import About from './sections/About'
@@ -16,6 +17,9 @@ import Wave from './sections/Wave'
 import Reviews from './sections/Reviews'
 import Footer from './sections/Footer'
 import ScrollUp from './components/ScrollUp/ScrollUp'
+import Preloader from './components/Preloader/Preloader'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 
@@ -23,8 +27,36 @@ import ScrollUp from './components/ScrollUp/ScrollUp'
 
 
 const App = () => {
+
+  const [loaded, setLoaded] = useState(false)
+
+  // global.onload = () => {
+
+  //   setTimeout(() => {
+  //     setLoaded(true)
+  //   }, 3000)
+
+  // }
+
+  // if (loaded == false) {
+
+  //   return <Preloader />
+  // }
+
+  setTimeout(() => {
+    setLoaded(true)
+  }, 5000)
+
+  if (loaded == false) {
+    document.querySelector('html').style.overflow = 'hidden'
+  } else {
+    document.querySelector('html').style.overflow = 'auto'
+  }
+
+
   return (
     <div className="App" style={{ position: 'relative' }}>
+      {loaded == false ? <Preloader /> : null}
       <ScrollUp />
       <MainScreen />
       <About />

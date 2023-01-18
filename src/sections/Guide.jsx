@@ -27,7 +27,8 @@ const Guide = () => {
         <div className={style.guideWrapper} ref={ref}>
             <Parallax
                 img={window.innerWidth > 720 ? background : background_m}
-                height={'auto'}>
+                height={'auto'}
+                >
                 <div className={style.guide}>
                     <div className="container">
                         <div className={style.guide__inner}>

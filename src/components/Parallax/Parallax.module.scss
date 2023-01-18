@@ -4,3 +4,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media(max-width: 720px) {
+    .parallax{
+        background-attachment: unset;
+        background-position: bottom;
+        background-size: contain;
+    }
+}

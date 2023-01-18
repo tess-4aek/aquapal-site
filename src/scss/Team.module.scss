@@ -40,16 +40,36 @@
         border: 5px solid #bea4e9;
         border-radius: 50%;
         transition: ease 0.5s;
+        &Wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        &Hover:hover {
+            & img:nth-child(2) {
+                filter: blur(5px);
+            }
+            & .team__substrate {
+                opacity: 1;
+                z-index: 5;
+            }
+        }
         & img {
             vertical-align: bottom;
             max-width: 190px;
+            transition: ease 0.5s;
         }
         &._active {
             box-shadow: 0px 0px 10px 0px #bea4e9;
             & .team__substrate {
                 opacity: 1;
+                z-index: 5;
             }
-            &>img {
+            & > img {
                 filter: blur(5px);
             }
         }
@@ -71,7 +91,7 @@
         border-radius: 50%;
         opacity: 0;
         transition: ease 0.5s;
-        z-index: 5;
+        z-index: -1;
         span {
             font-weight: 700;
             color: $dark-blue;
@@ -181,6 +201,12 @@
             letter-spacing: -0.4px;
             color: $blue;
             margin: 10px auto;
+        }
+        &__avatarHover {
+            z-index: -1;
+        }
+        &__avatarWrapper {
+            z-index: 10;
         }
     }
 }
