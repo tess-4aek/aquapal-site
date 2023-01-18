@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux'
 import { useEffect, useRef } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import phone1 from '../img/about-it/about-it_phone-1.png'
-import phone2 from '../img/about-it/about-it_phone-2.png'
-import phone3 from '../img/about-it/about-it_phone-3.png'
+import phone1 from '../img/about-it/about-it_phone-1.webp'
+import phone2 from '../img/about-it/about-it_phone-2.webp'
+import phone3 from '../img/about-it/about-it_phone-3.webp'
 
 
 

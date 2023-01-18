@@ -112,23 +112,7 @@
     }
 }
 
-@media (max-width: 1044px) {
-    .track {
-        &__content {
-            max-width: 400px;
-        }
-        &__title {
-            font-size: 30px;
-            line-height: 42px;
-        }
-        &__text {
-            font-size: 20px;
-            line-height: 28px;
-        }
-    }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 720px) {
     .track {
         padding: 65px 0;
         &__inner {

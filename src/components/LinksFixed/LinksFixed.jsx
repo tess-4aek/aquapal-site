@@ -2,8 +2,9 @@ import style from './LinksFixed.module.scss'
 import Logo from '../Logo/Logo'
 import appStore from '../../img/app-store_btn.svg'
 import playMarket from '../../img/play-market_btn.svg'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
+import {getBrowser} from '../../assets/getBrowser.js'
 
 const LinksFixed = () => {
 
@@ -11,6 +12,19 @@ const LinksFixed = () => {
     const links = useRef()
 
     const pos = useSelector(state => state.pos)
+
+    const [browserSafari, setBrowserSafari] = useState(false);
+
+    useEffect(() => {
+        let browser = getBrowser();
+        setBrowserSafari(browser.isSafari);
+        if (browserSafari) stylesForBrowserSafari()
+    }, [browserSafari]);
+
+
+    function stylesForBrowserSafari() {
+        links.current.style.position = 'unset !important'
+    }
 
     window.onscroll = function () {
         // console.log(window.scrollY + window.innerHeight)

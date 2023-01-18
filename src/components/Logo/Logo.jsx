@@ -1,10 +1,10 @@
 import style from './Logo.module.scss'
-import logoImg from '../../img/logo.png'
+import logo from '../../img/logo.png'
 
 const Logo = () => {
     return (
-        <a href='localhost:3000' className={style.logo}>
-            <img src={logoImg} alt="logotype" />
+        <a href="#" className={style.logo}>
+            <img src={logo} alt="logotype" />
             Aqua Pal
         </a>
     )

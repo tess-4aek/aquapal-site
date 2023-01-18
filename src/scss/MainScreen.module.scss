@@ -4,7 +4,7 @@
 
 .mainScreen {
     height: 100vh;
-    background-image: url(../img/main-screen/main-banner.jpg);
+    background-image: url(../img/main-screen/main-banner.png);
     background-size: 100% calc(100vh - 80px);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -69,21 +69,7 @@
     }
 }
 
-@media (max-width: 1044px) {
-    .mainScreen {
-        &__subtitle {
-            font-size: 22px;
-            line-height: 34px;
-        }
-        &__title {
-            font-size: 40px;
-            line-height: 50px;
-            max-width: 380px;
-        }
-    }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 720px) {
     .mainScreenWrapper {
         height: 100vh;
         background-image: url(../img//main-screen/main-banner_parralax.png);

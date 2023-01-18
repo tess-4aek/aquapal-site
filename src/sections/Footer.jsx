@@ -17,9 +17,6 @@ const Footer = () => {
         dispatch(setFooterPosAction(footerOffsetTop.offsetTop))
     }, [])
 
-    const date = new Date()
-    const year = date.getFullYear()
-
     return (
         <div className={style.footer} ref={ref}>
             <div className="container">
@@ -35,7 +32,7 @@ const Footer = () => {
                     </nav>
                     <div className={style.footer__info}>
                         <div className={style.footer__copyright}>
-                            © {year} Aqua Pal, All Rights Reserved
+                            © 2022 Aqua Pal, All Rights Reserved
                         </div>
                         <a href="#" className={style.footer__company}>
                             Made with love by Nitrix

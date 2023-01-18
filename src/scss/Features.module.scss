@@ -80,32 +80,7 @@
     }
 }
 
-@media (max-width: 1600px) {
-    .features {
-        &__title {
-            font-size: 30px;
-            line-height: 44px;
-        }
-        &__moreList {
-            column-gap: unset;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            & .features__element {
-                width: fit-content;
-            }
-        }
-        &__soonList{
-            flex-wrap: wrap;
-            column-gap: 10px;
-        }
-        &__element {
-            font-size: 20px;
-            line-height: 26px;
-        }
-    }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 720px) {
     .features {
         &__title {
             font-size: 28px;
@@ -121,12 +96,6 @@
             font-size: 18px;
             line-height: 140%;
             letter-spacing: -0.4px;
-        }
-        &__moreList {
-            grid-template-columns: unset;
-        }
-        &__soonList {
-            grid-template-columns: unset;
         }
     }
 }
