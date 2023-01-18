@@ -16,9 +16,10 @@ const LinksFixed = () => {
     const [browserSafari, setBrowserSafari] = useState(false);
 
     useEffect(() => {
-        let browser = getBrowser();
-        setBrowserSafari(browser.isSafari);
+        let browser = getBrowser()
+        setBrowserSafari(browser.isSafari)
         if (browserSafari) stylesForBrowserSafari()
+        console.log(browserSafari)
     }, [browserSafari]);
 
 
