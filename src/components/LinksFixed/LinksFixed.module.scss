@@ -11,7 +11,7 @@
     height: 90px;
     display: flex;
     align-items: center;
-    border-top: 1px solid #DBDBDB;
+    border-top: 1px solid #dbdbdb;
     background: #fff;
     z-index: 9999;
     &__inner {
@@ -22,18 +22,21 @@
         display: flex;
         column-gap: 25px;
     }
+    &.safariStyles {
+        position: unset !important;
+    }
     &.linksFixed_fixed {
-        animation: linksAnimationStart .5s;
+        animation: linksAnimationStart 0.5s;
         animation-fill-mode: forwards;
     }
     &.linksFixed_animationEnd {
-        animation: linksAnimationEnd .5s;
+        animation: linksAnimationEnd 0.5s;
         animation-fill-mode: forwards;
     }
 }
 
 @media (max-width: 720px) {
-    .linksFixedWrapper{
+    .linksFixedWrapper {
         display: none;
     }
 }

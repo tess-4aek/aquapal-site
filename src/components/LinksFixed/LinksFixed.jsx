@@ -23,8 +23,8 @@ const LinksFixed = () => {
     }, [browserSafari]);
 
 
-    function stylesForBrowserSafari() {
-        links.current.style.position = 'unset !important'
+    const stylesForBrowserSafari = () => {
+        links.current.classList.add(style.safariStyles)
     }
 
     window.onscroll = function () {
