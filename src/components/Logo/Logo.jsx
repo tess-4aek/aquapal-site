@@ -1,5 +1,5 @@
 import style from './Logo.module.scss'
-import logoImg from '../../img/logo.png'
+import logoImg from '../../img/logo.webp'
 
 const Logo = () => {
     return (

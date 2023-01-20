@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react'
 import { setAddWaterPosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import appleWatch from '../img/add-water/add-water_apple-watch.png'
-import phone from '../img/add-water/add-water_phone.png'
+import appleWatch from '../img/add-water/add-water_apple-watch.webp'
+import phone from '../img/add-water/add-water_phone.webp'
 
 const AddWater = () => {
 

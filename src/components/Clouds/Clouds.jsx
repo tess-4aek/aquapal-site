@@ -3,7 +3,7 @@ import style from './Clouds.module.scss'
 import { useSelector } from 'react-redux'
 import { useRef } from 'react'
 
-import sky from '../../img/sky-dynamic_footage.png'
+import sky from '../../img/sky-dynamic_footage.webp'
 
 const Clouds = () => {
 

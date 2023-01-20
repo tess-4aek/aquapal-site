@@ -4,10 +4,11 @@ import { setProgressPosAction } from '../store/sitePosReducer'
 import { useEffect, useRef } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import phone1 from '../img/progress/progress_phone-1.png'
-import phone2 from '../img/progress/progress_phone-2.png'
-import background from '../img/progress/progress_back.png'
-import background_m from '../img/progress/progress_back_mobile.png'
+import phone1 from '../img/progress/progress_phone-1.webp'
+import phone2 from '../img/progress/progress_phone-2.webp'
+import background from '../img/progress/progress_back.webp'
+import background_m from '../img/progress/progress_back_mobile.webp'
+
 import Clouds from '../components/Clouds/Clouds'
 import Parallax from '../components/Parallax/Parallax'
 

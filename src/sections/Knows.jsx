@@ -4,8 +4,9 @@ import { useEffect, useRef } from 'react'
 import { setKnowsPosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import phone1 from '../img/knows/knows_phone-1.png'
-import phone2 from '../img/knows/knows_phone-2.png'
+import phone1 from '../img/knows/knows_phone-1.webp'
+import phone2 from '../img/knows/knows_phone-2.webp'
+
 import Clouds from '../components/Clouds/Clouds'
 
 const Knows = () => {

@@ -1,11 +1,11 @@
 import style from './LinksFixed.module.scss'
 import Logo from '../Logo/Logo'
-import appStore from '../../img/app-store_btn.svg'
-import playMarket from '../../img/play-market_btn.svg'
 import { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import {getBrowser} from '../../assets/getBrowser.js'
 
+import appStore from '../../img/app-store_btn.svg'
+import playMarket from '../../img/play-market_btn.svg'
 
 const LinksFixed = () => {
 

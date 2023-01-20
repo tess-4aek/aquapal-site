@@ -4,11 +4,12 @@ import { useEffect, useRef } from 'react'
 import { setGuidePosAction } from '../store/sitePosReducer'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import phone1 from '../img/guide/guide_phone-1.png'
-import phone2 from '../img/guide/guide_phone-2.png'
-import phone3 from '../img/guide/guide_phone-3.png'
-import background from '../img//guide/guide_back.png'
-import background_m from '../img//guide/guide_back_mobile.png'
+import phone1 from '../img/guide/guide_phone-1.webp'
+import phone2 from '../img/guide/guide_phone-2.webp'
+import phone3 from '../img/guide/guide_phone-3.webp'
+import background from '../img//guide/guide_back.webp'
+import background_m from '../img//guide/guide_back_mobile.webp'
+
 import Clouds from '../components/Clouds/Clouds'
 import Parallax from '../components/Parallax/Parallax'
 

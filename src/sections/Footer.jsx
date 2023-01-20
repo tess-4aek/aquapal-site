@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { setFooterPosAction } from '../store/sitePosReducer'
 import { useEffect, useRef } from 'react'
 
-import nitrix from '../img/footer/nitrix-logo.png'
+import nitrix from '../img/footer/nitrix-logo.webp'
 import Contacts from '../components/Contacts/Contacts'
 
 const Footer = () => {

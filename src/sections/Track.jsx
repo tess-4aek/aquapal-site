@@ -4,9 +4,9 @@ import { setTrackPosAction } from '../store/sitePosReducer'
 import { useEffect, useRef } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-import appleWatch1 from '../img/track/track_apple-watch-1.png'
-import appleWatch2 from '../img/track/track_apple-watch-2.png'
-import phone from '../img/track/track_phone.png'
+import appleWatch1 from '../img/track/track_apple-watch-1.webp'
+import appleWatch2 from '../img/track/track_apple-watch-2.webp'
+import phone from '../img/track/track_phone.webp'
 
 const Track = () => {
 

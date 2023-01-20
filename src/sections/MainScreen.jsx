@@ -2,7 +2,7 @@ import style from '../scss/MainScreen.module.scss'
 import Header from '../components/Header/Header'
 import HeaderMobile from '../components/HeaderMobile/HeaderMobile'
 
-import flag from '../img/ukrainian-flag_icon.png'
+import flag from '../img/ukrainian-flag_icon.webp'
 import appStore from '../img/app-store_btn.svg'
 import playMarket from '../img/play-market_btn.svg'
 
