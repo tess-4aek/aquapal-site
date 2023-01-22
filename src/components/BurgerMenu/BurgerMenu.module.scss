@@ -1,0 +1,35 @@
+.menu {
+    cursor: pointer;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    &__global {
+        backface-visibility: hidden;
+        position: absolute;
+        right: 3px;
+        border-top: 2px solid #296291;
+        transition: 0.55s;
+        border-radius: 2px;
+    }
+    &__top {
+        top: 13px;
+        width: 30px;
+        &_click {
+            backface-visibility: hidden;
+            top: 15px;
+            transform: rotate(50deg);
+            transition: 0.5s;
+        }
+    }
+    &__bottom {
+        top: 22px;
+        width: 20px;
+        &_click {
+            backface-visibility: hidden;
+            top: 15px;
+            width: 30px;
+            transform: rotate(-410deg);
+            transition: 0.5s;
+        }
+    }
+}

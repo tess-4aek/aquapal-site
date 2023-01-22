@@ -7,6 +7,7 @@ import Logo from '../Logo/Logo'
 
 import appStore from '../../img/app-store_btn.svg'
 import playMarket from '../../img/play-market_btn.svg'
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 
 const HeaderMobile = () => {
@@ -15,7 +16,7 @@ const HeaderMobile = () => {
 
     const menu = useRef(null)
     const menuList = useRef(null)
-    
+
     const toggleMenuState = () => {
         if (menuState === true) {
             setMenuState(false)
@@ -35,10 +36,11 @@ const HeaderMobile = () => {
             <div className="container">
                 <div className={style.headerMobile__inner}>
                     <Logo />
-                    <div onClick={toggleMenuState} className={style.headerMobile__burgerMenu} ref={menu}>
+                    {/* <div onClick={toggleMenuState} className={style.headerMobile__burgerMenu} ref={menu}>
                         <div className={style.headerMobile__burgerMenu_element1}></div>
                         <div className={style.headerMobile__burgerMenu_element2}></div>
-                    </div>
+                    </div> */}
+                    <BurgerMenu />
                     <nav className={style.headerMobile__navigation} ref={menuList}>
                         <ul>
                             <li onClick={toggleMenuState}><a href="#home">Home</a></li>

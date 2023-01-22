@@ -53,61 +53,6 @@
             transform: translateX(0);
         }
     }
-    &__burgerMenu {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        &_element1 {
-            position: absolute;
-            width: 30px;
-            height: 2px;
-            background: #296291;
-            top: 14px;
-            right: 3px;
-            border-radius: 1px;
-            transform-origin: center;
-
-            // transition: 0.5s;
-        }
-        &_element2 {
-            position: absolute;
-            width: 20px;
-            height: 2px;
-            background: #296291;
-            top: 23px;
-            right: 3px;
-            border-radius: 1px;
-            transform-origin: center;
-            
-            // transition: 0.5s;
-        }
-        &._active {
-            .headerMobile__burgerMenu_element1 {
-                // transform: 
-                // // translateX(50%)
-                //     rotateZ(45deg);
-                // top: 50%;
-                // // right: 50%;
-                // animation-play-state: running;
-            // animation-fill-mode: forwards;
-
-                // height: 1.5px;
-            }
-            .headerMobile__burgerMenu_element2 {
-                // width: 30px;
-                // transform: 
-                // // translateX(50%)
-                //     rotateZ(-45deg);
-                // top: 50%;
-                // // right: 50%;
-                animation-play-state: running;
-            animation-fill-mode: forwards;
-
-
-                // height: 1.5px;
-            }
-        }
-    }
     &__contactsWrapper {
         padding: 25px 0;
     }
