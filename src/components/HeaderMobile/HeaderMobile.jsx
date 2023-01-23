@@ -14,20 +14,26 @@ const HeaderMobile = () => {
 
     const [menuState, setMenuState] = useState(false)
 
-    // const menu = useRef(null)
-    // const menuList = useRef(null)
+    const menuList = useRef(null)
+
+
+    const top = useRef(null)
+    const bottom = useRef(null)
 
     const toggleMenuState = () => {
+
         if (menuState === true) {
             setMenuState(false)
-            // menu.current.classList.toggle(style._active)
-            // menuList.current.classList.toggle(style._active)
-            // scrollLock.enablePageScroll()
+            top.current.classList.toggle(style.menu__top_click)
+            bottom.current.classList.toggle(style.menu__bottom_click)
+            menuList.current.classList.toggle(style._active)
+            scrollLock.enablePageScroll()
         } else {
             setMenuState(true)
-            // menu.current.classList.toggle(style._active)
-            // menuList.current.classList.toggle(style._active)
-            // scrollLock.disablePageScroll()
+            top.current.classList.toggle(style.menu__top_click)
+            bottom.current.classList.toggle(style.menu__bottom_click)
+            menuList.current.classList.toggle(style._active)
+            scrollLock.disablePageScroll()
         }
     }
 
@@ -36,12 +42,12 @@ const HeaderMobile = () => {
             <div className="container">
                 <div className={style.headerMobile__inner}>
                     <Logo />
-                    {/* <div onClick={toggleMenuState} className={style.headerMobile__burgerMenu} ref={menu}>
-                        <div className={style.headerMobile__burgerMenu_element1}></div>
-                        <div className={style.headerMobile__burgerMenu_element2}></div>
-                    </div> */}
-                    <BurgerMenu state={menuState} />
-                    <nav className={style.headerMobile__navigation}>
+                    <div className={style.menu} onClick={toggleMenuState}>
+                        <span className={`${style.menu__global} ${style.menu__top}`} ref={top}></span>
+                        <span className={`${style.menu__global} ${style.menu__bottom}`} ref={bottom}></span>
+                    </div>
+                    {/* <BurgerMenu state={menuState} list={menuList} /> */}
+                    <nav className={style.headerMobile__navigation} ref={menuList}>
                         <ul>
                             <li onClick={toggleMenuState}><a href="#home">Home</a></li>
                             <li onClick={toggleMenuState}><a href="#about">About</a></li>
