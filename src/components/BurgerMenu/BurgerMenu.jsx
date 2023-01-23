@@ -13,12 +13,12 @@ const BurgerMenu = (props) => {
 
 
         if (props.menuState === true) {
-            setMenuState(false)
+            // setMenuState(false)
             top.current.classList.toggle(style.menu__top_click)
             bottom.current.classList.toggle(style.menu__bottom_click)
             scrollLock.enablePageScroll()
         } else {
-            setMenuState(true)
+            // setMenuState(true)
             top.current.classList.toggle(style.menu__top_click)
             bottom.current.classList.toggle(style.menu__bottom_click)
             scrollLock.disablePageScroll()
