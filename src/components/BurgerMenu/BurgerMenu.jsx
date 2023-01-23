@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import style from './BurgerMenu.module.scss'
 import scrollLock from 'scroll-lock';
 
