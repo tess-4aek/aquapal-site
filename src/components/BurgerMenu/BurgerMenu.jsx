@@ -3,8 +3,8 @@ import style from './BurgerMenu.module.scss'
 import scrollLock from 'scroll-lock';
 
 
-const BurgerMenu = () => {
-    const [menuState, setMenuState] = useState(false)
+const BurgerMenu = (props) => {
+    // const [menuState, setMenuState] = useState(false)
 
     const top = useRef(null)
     const bottom = useRef(null)
@@ -12,7 +12,7 @@ const BurgerMenu = () => {
     const menuActive = () => {
 
 
-        if (menuState === true) {
+        if (props.menuState === true) {
             setMenuState(false)
             top.current.classList.toggle(style.menu__top_click)
             bottom.current.classList.toggle(style.menu__bottom_click)
