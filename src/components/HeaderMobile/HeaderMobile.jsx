@@ -12,24 +12,24 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const HeaderMobile = () => {
 
-    const [menuState, setMenuState] = useState(false)
+    // const [menuState, setMenuState] = useState(false)
 
-    const menu = useRef(null)
-    const menuList = useRef(null)
+    // const menu = useRef(null)
+    // const menuList = useRef(null)
 
-    const toggleMenuState = () => {
-        if (menuState === true) {
-            setMenuState(false)
-            menu.current.classList.toggle(style._active)
-            menuList.current.classList.toggle(style._active)
-            scrollLock.enablePageScroll()
-        } else {
-            setMenuState(true)
-            menu.current.classList.toggle(style._active)
-            menuList.current.classList.toggle(style._active)
-            scrollLock.disablePageScroll()
-        }
-    }
+    // const toggleMenuState = () => {
+    //     if (menuState === true) {
+    //         setMenuState(false)
+    //         menu.current.classList.toggle(style._active)
+    //         menuList.current.classList.toggle(style._active)
+    //         scrollLock.enablePageScroll()
+    //     } else {
+    //         setMenuState(true)
+    //         menu.current.classList.toggle(style._active)
+    //         menuList.current.classList.toggle(style._active)
+    //         scrollLock.disablePageScroll()
+    //     }
+    // }
 
     return (
         <div className={style.headerMobile}>

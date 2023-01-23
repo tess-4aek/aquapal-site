@@ -1,15 +1,35 @@
 import { useRef } from 'react'
 import style from './BurgerMenu.module.scss'
+import scrollLock from 'scroll-lock';
+
 
 const BurgerMenu = () => {
+    const [menuState, setMenuState] = useState(false)
 
     const top = useRef(null)
     const bottom = useRef(null)
 
     const menuActive = () => {
-        top.current.classList.toggle(style.menu__top_click)
-        bottom.current.classList.toggle(style.menu__bottom_click)
+
+
+        if (menuState === true) {
+            setMenuState(false)
+            top.current.classList.toggle(style.menu__top_click)
+            bottom.current.classList.toggle(style.menu__bottom_click)
+            scrollLock.enablePageScroll()
+        } else {
+            setMenuState(true)
+            top.current.classList.toggle(style.menu__top_click)
+            bottom.current.classList.toggle(style.menu__bottom_click)
+            scrollLock.disablePageScroll()
+        }
     }
+
+
+
+
+
+
 
     return (
         <div className={style.menu} onClick={menuActive}>
