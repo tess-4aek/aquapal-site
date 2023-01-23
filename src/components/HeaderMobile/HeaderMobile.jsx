@@ -41,7 +41,7 @@ const HeaderMobile = () => {
                         <div className={style.headerMobile__burgerMenu_element2}></div>
                     </div> */}
                     <BurgerMenu state={menuState} />
-                    <nav className={style.headerMobile__navigation} ref={menuList}>
+                    <nav className={style.headerMobile__navigation}>
                         <ul>
                             <li onClick={toggleMenuState}><a href="#home">Home</a></li>
                             <li onClick={toggleMenuState}><a href="#about">About</a></li>
