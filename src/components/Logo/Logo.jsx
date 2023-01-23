@@ -3,7 +3,7 @@ import logoImg from '../../img/logo.webp'
 
 const Logo = () => {
     return (
-        <a href='http://localhost:3000' className={style.logo}>
+        <a href='https://aquapal-site.vercel.app/' className={style.logo}>
             <img src={logoImg} alt="logotype" />
             Aqua Pal
         </a>
