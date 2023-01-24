@@ -69,7 +69,7 @@ const App = () => {
       <Features />
       <Memories />
       <Team />
-      <Reviews />
+      {/* <Reviews /> */}
       <Wave />
       <Footer />
     </div>

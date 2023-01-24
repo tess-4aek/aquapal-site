@@ -59,10 +59,10 @@ const HeaderMobile = () => {
                             <Contacts />
                         </div>
                         <div className={style.headerMobile__links}>
-                            <a href="#">
+                            <a target="_blank" href="#">
                                 <img src={appStore} alt="Download from App Store" />
                             </a>
-                            <a href="#">
+                            <a target="_blank" href="#">
                                 <img src={playMarket} alt="Download from Play Market" />
                             </a>
                         </div>

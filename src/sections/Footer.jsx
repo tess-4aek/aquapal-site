@@ -37,7 +37,7 @@ const Footer = () => {
                         <div className={style.footer__copyright}>
                             © {year} Aqua Pal, All Rights Reserved
                         </div>
-                        <a href="#" className={style.footer__company}>
+                        <a href="https://nitrix.io" className={style.footer__company}>
                             Made with love by Nitrix
                             <img src={nitrix} alt="Nitrix" />
                         </a>
