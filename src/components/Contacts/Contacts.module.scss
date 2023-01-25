@@ -26,11 +26,17 @@
     &__instagramIcon, &__emailIcon {
         fill: #fff;
     }
+    &__wrapper{
+        display: flex;
+        column-gap: 10px;
+    }
 }
 
 @media (max-width: 1600px) {
     .contacts {
         font-size: 18px;
         line-height: 25px;
+        flex-direction: column-reverse;
+        row-gap: 10px;
     }
 }

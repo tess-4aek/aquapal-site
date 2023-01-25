@@ -46,7 +46,6 @@ const HeaderMobile = () => {
                         <span className={`${style.menu__global} ${style.menu__top}`} ref={top}></span>
                         <span className={`${style.menu__global} ${style.menu__bottom}`} ref={bottom}></span>
                     </div>
-                    {/* <BurgerMenu state={menuState} list={menuList} /> */}
                     <nav className={style.headerMobile__navigation} ref={menuList}>
                         <ul>
                             <li onClick={toggleMenuState}><a href="#home">Home</a></li>
